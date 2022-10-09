@@ -1,0 +1,38 @@
+---
+import MainHead from "../components/MainHead.astro";
+import Footer from "../components/Footer.astro";
+import Nav from "../components/Nav.astro";
+
+const { content } = Astro.props;
+---
+
+<html lang={content.lang || "en"}>
+	<head>
+		<MainHead title={content.title} description={content.description} />
+		<meta charset="UTF-8" />
+		<link
+			href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+			integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+			crossorigin="anonymous"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+			rel="stylesheet"
+		/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+		<link rel="stylesheet" href="src/css/style.css" />
+	</head>
+	<body>
+		<Nav />
+		<script></script>
+	</body>
+</html>

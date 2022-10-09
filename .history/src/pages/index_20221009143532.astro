@@ -1,0 +1,486 @@
+---
+// Component Imports
+import MainHead from "../components/MainHead.astro";
+import Nav from "../components/Nav.astro";
+import Footer from "../components/Footer.astro";
+import PortfolioPreview from "../components/PortfolioPreview.astro";
+
+// Data Fetching: List all Markdown posts in the repo.
+const projects = await Astro.glob("./project/**/*.md");
+const featuredProject = projects[0];
+---
+
+<html lang="en">
+	<head>
+		<MainHead title="Vijayasenthil E" description="" />
+	</head>
+	<body>
+		<section class="sec1" id="section1">
+			<div class="menuBar">
+				<ul>
+					<li><a href="#section1">Home</a></li>
+					<li><a href="#section2">About</a></li>
+					<li><a href="#section3">Skill</a></li>
+					<li><a href="#section4">contact</a></li>
+				</ul>
+			</div>
+			<Nav />
+			<div class="sec1__container">
+				<div class="sec1__content">
+					<div class="sec1__contentDetail">
+						<div class="sec1__contentHider">
+							<h1>hi,</h1>
+						</div>
+						<div class="sec1__contentHider">
+							<h1>I'am <span>Evs</span></h1>
+						</div>
+						<div class="sec1__contentHider">
+							<h1>Designer & Developer</h1>
+						</div>
+					</div>
+					<a
+						href="https://www.instagram.com/i_am_evs/"
+						target="_blank"
+						>follow Me <i class="fab fa-instagram"></i>
+					</a>
+				</div>
+
+				<div class="sec1__imgContainer">
+					<div class="sec1__imgBx">
+						<!-- <img src="img/intro.gif" alt="evs" /> -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- <header class="hero">
+			<div class="gradient"></div>
+			<div class="gradient2"></div>
+			<div class="overlay">
+				<h1 class="title">
+					<small class="subtitle">The personal site of</small>Jeanine White
+				</h1>
+				<div class="roles">
+					<span class="role">👩‍💻 Developer <span class="invert">👩‍💻 Developer</span></span>
+					<span class="role">🎤 Speaker <span class="invert">🎤 Speaker</span></span>
+					<span class="role">✏️ Writer <span class="invert">✏️ Writer</span></span>
+				</div>
+				<p class="desc">Lover of dogs, roadtrips, and poetry.</p>
+			</div>
+		</header>
+		<main class="wrapper">
+			<div class="grid">
+				<div class="section">
+					<h3 class="sectionTitle">Selected Work</h3>
+					<PortfolioPreview project={featuredProject} />
+					<div class="buttonContainer">
+						<a href="/projects/" class="button">View All</a>
+					</div>
+				</div>
+				<div class="section">
+					<h3 class="sectionTitle">About me</h3>
+					<p class="bio">
+						<span>Hello!</span> I’m Jeanine, and this is my website. It was made using{' '}
+						<a href="https://github.com/withastro/astro" target="_blank" rel="nofollow"> Astro</a>,
+						a new way to build static sites. This is just an example template for you to modify.
+					</p>
+					<p>
+						<a href="/about">Read more</a>
+					</p>
+				</div>
+			</div> 
+		</main>
+		<Footer />-->
+		<style>
+			/* section 1 */
+
+			.sec1 {
+				position: relative;
+				min-height: 100vh;
+				width: 100%;
+				background: #fff;
+				display: flex;
+				justify-content: center;
+				align-items: flex-end;
+				overflow: hidden;
+				border-bottom: 0.1rem solid #ccc;
+			}
+
+			.menuBar {
+				position: fixed;
+				top: 0;
+				left: 120%;
+				height: 100%;
+				width: 80%;
+				/* background: red; */
+				z-index: 2000;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				backdrop-filter: blur(10px);
+				box-shadow: 0 0 5rem rgba(0, 0, 0, 0.5);
+				transition: 0.5s;
+			}
+
+			.menuBar.active {
+				left: 20%;
+			}
+
+			.menuBar ul {
+				list-style-type: none;
+			}
+
+			.menuBar ul li {
+				margin: 5rem 0;
+			}
+
+			.menuBar ul li a {
+				position: relative;
+				text-decoration: none;
+				color: #fff;
+				font-size: 2rem;
+				padding: 1.5rem;
+				transition: 0.5s;
+				background: #e66060;
+				padding: 1rem 3rem;
+				border-radius: 3rem;
+				box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+			}
+
+			.menuBar ul li a:hover {
+				color: #e66060;
+				background: #fff;
+			}
+
+			.container {
+				max-width: 768px;
+				margin-left: var(--mb-1-5);
+				margin-right: var(--mb-1-5);
+			}
+
+			.grid {
+				display: grid;
+				gap: 1.5rem;
+			}
+
+			.header {
+				width: 100%;
+				position: fixed;
+				bottom: 0;
+				left: 0;
+				z-index: var(--z-fixed);
+				background-color: var(--body-color);
+			}
+
+			.navBar {
+				display: flex;
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				background: #fff;
+				justify-content: space-between;
+				align-items: center;
+				padding: 1rem 2rem;
+				box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+				z-index: 2000;
+			}
+
+			.nav {
+				max-width: 968px;
+				height: var(--header-height);
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+			.nav__logo,
+			.nav__toggle {
+				color: var(--title-color);
+				font-weight: var(--font-medium);
+			}
+
+			.nav__logo:hover {
+				color: var(--first-color);
+			}
+
+			.nav__toggle {
+				font-size: 1.1rem;
+				cursor: pointer;
+			}
+
+			.nav__toggle:hover {
+				color: var(--first-color);
+			}
+
+			@media screen and (max-width: 767px) {
+				.nav__menu {
+					position: fixed;
+					bottom: -100%;
+					left: 0;
+					width: 100%;
+					background-color: var(--body-color);
+					padding: 2rem 1.5rem 4rem;
+					box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+					border-radius: 1.5rem 1.5rem 0 0;
+					transition: 0.7s;
+				}
+			}
+
+			.nav__list {
+				grid-template-columns: repeat(3, 1fr);
+				gap: 2rem;
+			}
+
+			.nav__link {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				font-size: var(--small-font-size);
+				color: var(--title-color);
+				font-weight: var(--font-medium);
+			}
+
+			.nav__link:hover {
+				color: var(--first-color);
+			}
+
+			.nav__icon {
+				font-size: 1.3rem;
+			}
+
+			.nav__close {
+				position: absolute;
+				right: 1.3rem;
+				bottom: 0.5rem;
+				font-size: 1.5rem;
+				cursor: pointer;
+				color: var(--first-color);
+			}
+
+			.nav__close:hover {
+				color: var(--first-color-alt);
+			}
+
+			.sec1__menuIcon {
+				display: none;
+				position: relative;
+				height: 3rem;
+				width: 3rem;
+				background: url("https://i.ibb.co/ccyJDPg/icons8-menu-24.png");
+				background-size: contain;
+				background-repeat: no-repeat;
+				cursor: pointer;
+				transition: 0.5s;
+			}
+
+			.sec1__menuIcon.active {
+				background: url("https://i.ibb.co/G9TDqVj/icons8-macos-close-32.png");
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: contain;
+			}
+
+			.navBar .logo h1 {
+				color: #333;
+				font-size: 2rem;
+				letter-spacing: 0.2rem;
+			}
+
+			.navBar .navBar__menu ul {
+				display: flex;
+				list-style-type: none;
+			}
+			.navBar .navBar__menu ul li {
+				margin: 1.5rem;
+			}
+
+			.navBar .navBar__menu ul li a {
+				position: relative;
+				text-decoration: none;
+				font-weight: 500;
+				font-size: 1.5rem;
+				padding-bottom: 1rem;
+				color: #333;
+				transition: 0.3s;
+			}
+
+			.navBar .navBar__menu ul li a:before {
+				background: rgb(236, 78, 78);
+				position: absolute;
+				content: "";
+				bottom: 0;
+				left: 0;
+				height: 0.4rem;
+				width: 0%;
+				border-radius: 1rem;
+				transition: 0.4s;
+			}
+
+			.navBar .navBar__menu ul li a:hover:before {
+				width: 100%;
+			}
+
+			.navBar .navBar__menu ul li a:hover {
+				color: rgb(226, 86, 86);
+			}
+
+			.button {
+				display: inline-block;
+				background-color: var(--first-color);
+				color: #fff;
+				padding: 1rem;
+				border-radius: 0.5rem;
+				font-weight: var(--font-medium);
+			}
+
+			.button:hover {
+				background-color: var(--first-color-alt);
+			}
+
+			.button__icon {
+				font-size: 1.25rem;
+				margin-left: var(--mb-0-5);
+				transition: 0.5s;
+			}
+
+			.button--flex {
+				display: inline-flex;
+				align-items: center;
+			}
+
+			.button--small {
+				padding: 0.75rem 1rem;
+			}
+
+			.button--link {
+				padding: 0;
+				background-color: transparent;
+				color: var(--first-color);
+			}
+
+			.button--link:hover {
+				background-color: transparent;
+				color: var(--first-color-alt);
+			}
+
+			.sec1__container {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				flex-wrap: wrap;
+				margin-top: 10rem;
+				/* background: blue; */
+				width: 100%;
+				padding: 0 5rem;
+			}
+
+			.sec1__content .sec1__contentDetail h1 {
+				font-weight: 900;
+				font-size: 5rem;
+				text-transform: capitalize;
+				transform: translateY(7rem);
+			}
+
+			.sec1__contentHider {
+				overflow: hidden;
+			}
+
+			.sec1__content .sec1__contentDetail h1 span {
+				color: rgb(236, 75, 75);
+			}
+
+			.sec1__content .sec1__contentDetail {
+				margin-bottom: 3rem;
+			}
+
+			.sec1__content a {
+				background: rgb(226, 69, 69);
+				color: #fff;
+				text-decoration: none;
+				padding: 1rem 2.5rem;
+				font-size: 1.5rem;
+				border-radius: 1rem;
+				transition: 0.4s;
+			}
+
+			.sec1__content a:hover {
+				background: rgb(216, 43, 43);
+			}
+
+			.sec1__imgContainer {
+				position: relative;
+			}
+
+			.sec1__imgBx {
+				position: relative;
+				width: 50rem;
+				/* background: red; */
+			}
+			@keyframes animate3 {
+				0% {
+					transform: translateY(-3rem);
+				}
+
+				50% {
+					transform: translateY(0rem);
+				}
+
+				100% {
+					transform: translateY(-3rem);
+				}
+			}
+
+			.sec1__imgBx img {
+				position: relative;
+				z-index: 1;
+				width: 100%;
+				object-fit: cover;
+				/* filter: drop-shadow(0 0 .5rem rgba(0, 0, 0, .5)); */
+			}
+
+			@keyframes animate {
+				0% {
+					transform: translateX(0rem);
+				}
+
+				50% {
+					transform: translateX(2rem);
+				}
+
+				100% {
+					transform: translateX(0rem);
+				}
+			}
+
+			.sec1__imgBx .sec1__design2 {
+				position: absolute;
+				bottom: 2rem;
+				right: 0;
+				height: 10rem;
+				width: 10rem;
+				background: linear-gradient(
+					rgb(255, 107, 107),
+					rgb(184, 27, 27)
+				);
+				border-radius: 2rem;
+				filter: blur(2px);
+				animation: animate2 ease-in-out 5s infinite;
+				z-index: 1000;
+			}
+
+			@keyframes animate2 {
+				0% {
+					transform: translateY(0rem) rotateZ(0deg);
+				}
+
+				50% {
+					transform: translateY(-2rem) rotateZ(360deg);
+				}
+
+				100% {
+					transform: translateY(0rem) rotateZ(0deg);
+				}
+			}
+		</style>
+	</body>
+</html>

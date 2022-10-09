@@ -1,0 +1,62 @@
+---
+// Component Imports
+import MainHead from '../components/MainHead.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import PortfolioPreview from '../components/PortfolioPreview.astro';
+
+// Data Fetching: List all Markdown posts in the repo.
+const projects = await Astro.glob('./project/**/*.md');
+const featuredProject = projects[0];
+---
+
+<html lang="en">
+	<head>
+		<MainHead
+			title="Vijayasenthil E"
+			description=""
+		/>
+	</head>
+	<body>
+		
+		<Nav />
+		<!-- <header class="hero">
+			<div class="gradient"></div>
+			<div class="gradient2"></div>
+			<div class="overlay">
+				<h1 class="title">
+					<small class="subtitle">The personal site of</small>Jeanine White
+				</h1>
+				<div class="roles">
+					<span class="role">👩‍💻 Developer <span class="invert">👩‍💻 Developer</span></span>
+					<span class="role">🎤 Speaker <span class="invert">🎤 Speaker</span></span>
+					<span class="role">✏️ Writer <span class="invert">✏️ Writer</span></span>
+				</div>
+				<p class="desc">Lover of dogs, roadtrips, and poetry.</p>
+			</div>
+		</header>
+		<main class="wrapper">
+			<div class="grid">
+				<div class="section">
+					<h3 class="sectionTitle">Selected Work</h3>
+					<PortfolioPreview project={featuredProject} />
+					<div class="buttonContainer">
+						<a href="/projects/" class="button">View All</a>
+					</div>
+				</div>
+				<div class="section">
+					<h3 class="sectionTitle">About me</h3>
+					<p class="bio">
+						<span>Hello!</span> I’m Jeanine, and this is my website. It was made using{' '}
+						<a href="https://github.com/withastro/astro" target="_blank" rel="nofollow"> Astro</a>,
+						a new way to build static sites. This is just an example template for you to modify.
+					</p>
+					<p>
+						<a href="/about">Read more</a>
+					</p>
+				</div>
+			</div> 
+		</main>
+		<Footer />-->
+	</body>
+</html>

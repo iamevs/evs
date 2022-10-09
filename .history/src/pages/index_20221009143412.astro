@@ -1,0 +1,94 @@
+---
+// Component Imports
+import MainHead from '../components/MainHead.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import PortfolioPreview from '../components/PortfolioPreview.astro';
+
+// Data Fetching: List all Markdown posts in the repo.
+const projects = await Astro.glob('./project/**/*.md');
+const featuredProject = projects[0];
+---
+
+<html lang="en">
+	<head>
+		<MainHead
+			title="Vijayasenthil E"
+			description=""
+		/>
+	</head>
+	<body>
+		<section class="sec1" id="section1">
+			<div class="menuBar">
+				<ul>
+					<li><a href="#section1">Home</a></li>
+					<li><a href="#section2">About</a></li>
+					<li><a href="#section3">Skill</a></li>
+					<li><a href="#section4">contact</a></li>
+				</ul>
+			</div>
+			<Nav/>
+			<div class="sec1__container">
+				<div class="sec1__content">
+					<div class="sec1__contentDetail">
+						<div class="sec1__contentHider">
+							<h1>hi,</h1>
+						</div>
+						<div class="sec1__contentHider">
+							<h1>I'am <span>Evs</span></h1>
+						</div>
+						<div class="sec1__contentHider">
+							<h1>Designer & Developer</h1>
+						</div>
+					</div>
+					<a href="https://www.instagram.com/i_am_evs/" target="_blank">follow Me <i
+							class="fab fa-instagram"></i></a>
+				</div>
+	
+				<div class="sec1__imgContainer">
+					<div class="sec1__imgBx">
+						<!-- <img src="img/intro.gif" alt="evs" /> -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- <header class="hero">
+			<div class="gradient"></div>
+			<div class="gradient2"></div>
+			<div class="overlay">
+				<h1 class="title">
+					<small class="subtitle">The personal site of</small>Jeanine White
+				</h1>
+				<div class="roles">
+					<span class="role">👩‍💻 Developer <span class="invert">👩‍💻 Developer</span></span>
+					<span class="role">🎤 Speaker <span class="invert">🎤 Speaker</span></span>
+					<span class="role">✏️ Writer <span class="invert">✏️ Writer</span></span>
+				</div>
+				<p class="desc">Lover of dogs, roadtrips, and poetry.</p>
+			</div>
+		</header>
+		<main class="wrapper">
+			<div class="grid">
+				<div class="section">
+					<h3 class="sectionTitle">Selected Work</h3>
+					<PortfolioPreview project={featuredProject} />
+					<div class="buttonContainer">
+						<a href="/projects/" class="button">View All</a>
+					</div>
+				</div>
+				<div class="section">
+					<h3 class="sectionTitle">About me</h3>
+					<p class="bio">
+						<span>Hello!</span> I’m Jeanine, and this is my website. It was made using{' '}
+						<a href="https://github.com/withastro/astro" target="_blank" rel="nofollow"> Astro</a>,
+						a new way to build static sites. This is just an example template for you to modify.
+					</p>
+					<p>
+						<a href="/about">Read more</a>
+					</p>
+				</div>
+			</div> 
+		</main>
+		<Footer />-->
+	</body>
+</html>

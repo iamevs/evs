@@ -1,0 +1,58 @@
+---
+import Bg from "./Bg.astro";
+
+---
+
+<section id="home">
+  <div class="grid-layout">
+    <div id="home">
+      <!-- <Bg /> -->
+      <div id="home-container-text">
+        <h1 class="delayMediumReveal">
+          Hello !<br />
+          <span id="home-name">Vijayasenthil E</span><br />
+          <span class="loader">
+            A passionate Full Stack Web Developer
+          </span>
+        </h1>
+          <a
+            href="https://www.github.com/iamevs"
+            rel="noopener"
+            target="_blank"
+            class="delayExtraBigReveal"
+          >
+            Github
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    /* typing animation for loader */
+    .loader {
+      display: inline-block;
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 0.15em solid #fff;
+      animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+    }
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+    @keyframes blink-caret {
+      from,
+      to {
+        border-color: transparent;
+      }
+      50% {
+        border-color: #fff;
+      }
+    }
+    
+  </style>
