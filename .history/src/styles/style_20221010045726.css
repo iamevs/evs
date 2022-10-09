@@ -350,6 +350,39 @@
     max-width: 280px;
   }
   
+  #home .grid-layout #home #home-container-photo {
+    width: 40%;
+    height: 100vh;
+    position: relative;
+  }
+  
+  @media screen and (max-width: 992px) {
+    #home .grid-layout #home #home-container-photo {
+      display: none;
+    }
+  }
+  
+  #home .grid-layout #home #home-container-photo #logo-lab {
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -40%);
+            transform: translate(-50%, -40%);
+  }
+  
+  @media screen and (max-width: 992px) {
+    #home .grid-layout #home #home-container-photo #logo-lab {
+      display: none;
+    }
+  }
+  
+  #home .grid-layout #home #home-container-photo #logo-lab #luz-logo,
+  #home .grid-layout #home #home-container-photo #logo-lab #logo-iuricode {
+    opacity: 1;
+    -webkit-animation: light 8s ease infinite alternate;
+            animation: light 8s ease infinite alternate;
+  }
   
   @-webkit-keyframes light {
     0%,
@@ -373,9 +406,62 @@
     }
   }
   
+  #home .grid-layout #home #home-container-photo #logo-lab #luz_2 {
+    opacity: 1;
+    -webkit-animation: lightDelay 8s ease infinite alternate;
+            animation: lightDelay 8s ease infinite alternate;
+  }
+  
+  @-webkit-keyframes lightDelay {
+    0%,
+    60% {
+      opacity: 0;
+    }
+    65%,
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes lightDelay {
+    0%,
+    60% {
+      opacity: 0;
+    }
+    65%,
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  #home .grid-layout #home #home-container-photo .object {
+    -webkit-animation: MoveUpDown 4s linear infinite;
+            animation: MoveUpDown 4s linear infinite;
+  }
+  
+  @-webkit-keyframes MoveUpDown {
+    0%,
+    100% {
+      top: 34vh;
+    }
+    50% {
+      top: 38vh;
+    }
+  }
+  
+  @keyframes MoveUpDown {
+    0%,
+    100% {
+      top: 34vh;
+    }
+    50% {
+      top: 38vh;
+    }
+  }
+  
   #about {
     padding: 96px 48px;
-    background-color: #1f1f1f;
+    background-color: #110e1b;
   }
   
   @media screen and (max-width: 992px) {
