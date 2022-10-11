@@ -616,8 +616,7 @@ nav ul li a:hover {
   transform: scaleX(1);
   -webkit-transform-origin: bottom left;
   transform-origin: bottom left;
-  /* color: #1f1f1f; */
-  animation: zoom 0.5s ease forwards;
+  color: #1f1f1f;
 }
 
 @media(max-width: 900px){
