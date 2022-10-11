@@ -1,0 +1,304 @@
+<section id="s-skills">
+    <div class="grid-layout">
+        <div id="skills">
+            <article id="skills-text">
+                <h2 class="delaySmallReveal">Languages</h2>
+                <p class="delayMediumReveal changeDescription">
+                    Click to view content
+                </p>
+            </article>
+
+            <div id="skills-cards">
+                <article class="html intervalCardReveal">
+                    <span class="skills-cards-name-high">HTML</span>
+                    <img
+                        src="assets/icons/html.svg"
+                        width="60px"
+                        height="60px"
+                        alt="ícone do html"
+                        class="skills-icons"
+                    />
+                </article>
+                <article class="css intervalCardReveal">
+                    <span class="skills-cards-name-high">CSS</span>
+                    <img
+                        src="assets/icons/css.svg"
+                        width="60px"
+                        height="60px"
+                        alt="ícone do css"
+                        class="skills-icons"
+                    />
+                </article>
+                <article class="js intervalCardReveal">
+                    <span class="skills-cards-name-high">Javascript</span>
+                    <img
+                        src="assets/icons/js.svg"
+                        width="60px"
+                        height="60px"
+                        alt="ícone do javascript"
+                        class="skills-icons"
+                    />
+                </article>
+                <article class="sass intervalCardReveal">
+                    <span class="skills-cards-name-high">Sass</span>
+                    <img
+                        src="assets/icons/sass.svg"
+                        width="60px"
+                        height="60px"
+                        alt="ícone do sass"
+                        class="skills-icons"
+                    />
+                </article>
+                <article class="react intervalCardReveal">
+                    <span class="skills-cards-name-low">ReactJS</span>
+                    <img
+                        src="assets/icons/react.svg"
+                        width="60px"
+                        height="60px"
+                        alt="ícone do react"
+                        class="skills-icons"
+                    />
+                </article>
+                <article class="next intervalCardReveal">
+                    <span class="skills-cards-name-low">Next.js</span>
+                    <img
+                        src="assets/icons/next.svg"
+                        width="60px"
+                        height="60px"
+                        alt="ícone do next"
+                        class="skills-icons"
+                    />
+                </article>
+                <article class="styled intervalCardReveal">
+                    <span class="skills-cards-name-low aumento-hover"
+                        >Styled Components</span
+                    >
+                    <img
+                        src="assets/icons/styled.svg"
+                        width="60px"
+                        height="60px"
+                        alt="ícone do styled"
+                        class="skills-icons"
+                    />
+                </article>
+                <article class="tailwind intervalCardReveal">
+                    <span class="skills-cards-name-low">Tailwind</span>
+                    <img
+                        src="assets/icons/tailwind.svg"
+                        width="60px"
+                        height="60px"
+                        alt="ícone do tailwind"
+                        class="skills-icons"
+                    />
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    #s-skills {
+        padding: 96px 48px;
+        background-color: #0e091b;
+        padding-bottom: 32px;
+    }
+
+    @media screen and (max-width: 992px) {
+        #s-skills {
+            padding: 48px 16px;
+        }
+    }
+
+    #s-skills .grid-layout #skills {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        height: auto;
+        padding: 8px;
+    }
+
+    #s-skills .grid-layout #skills div,
+    #s-skills .grid-layout #skills article {
+        width: 50%;
+    }
+
+    @media screen and (max-width: 1200px) {
+        #s-skills .grid-layout #skills div,
+        #s-skills .grid-layout #skills article {
+            width: 100%;
+        }
+    }
+
+    #s-skills .grid-layout #skills #skills-text {
+        min-height: 300px;
+    }
+
+    #s-skills .grid-layout #skills #skills-text h2 {
+        margin-bottom: 32px;
+        color: #fafafa;
+        font-size: 3.2rem;
+        font-weight: 500;
+    }
+
+    #s-skills .grid-layout #skills #skills-text h2 span {
+        color: #6610f2;
+        font-size: 64px;
+    }
+
+    #s-skills .grid-layout #skills #skills-text .changeDescription {
+        -webkit-transition: 2s all ease;
+        transition: 2s all ease;
+    }
+
+    #s-skills .grid-layout #skills #skills-text p {
+        max-width: 500px;
+        line-height: 3.2rem;
+        color: #cccccc;
+        font-family: "DM Sans";
+        font-size: 1.8rem;
+    }
+
+    #s-skills .grid-layout #skills #skills-cards {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    @media screen and (max-width: 1200px) {
+        #s-skills .grid-layout #skills #skills-cards {
+            margin-top: 48px;
+        }
+    }
+
+    #s-skills .grid-layout #skills #skills-cards article {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        width: 20%;
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        height: 130px;
+        background-color: #110e1b;
+        position: relative;
+        border: 1px solid #0e091b;
+        -webkit-transition: 1s all ease;
+        transition: 1s all ease;
+    }
+
+    #s-skills .grid-layout #skills #skills-cards article:hover {
+        border: 1px solid #6610f2;
+    }
+
+    #s-skills
+        .grid-layout
+        #skills
+        #skills-cards
+        article:hover
+        .skills-cards-name,
+    #s-skills
+        .grid-layout
+        #skills
+        #skills-cards
+        article:hover
+        .skills-cards-name-high,
+    #s-skills
+        .grid-layout
+        #skills
+        #skills-cards
+        article:hover
+        .skills-cards-name-low {
+        display: block;
+        text-align: center;
+    }
+
+    @media screen and (max-width: 768px) {
+        #s-skills .grid-layout #skills #skills-cards article {
+            width: 40%;
+            margin: 20px 0px;
+        }
+    }
+
+    #s-skills .grid-layout #skills #skills-cards article .skills-cards-name,
+    #s-skills
+        .grid-layout
+        #skills
+        #skills-cards
+        article
+        .skills-cards-name-high,
+    #s-skills
+        .grid-layout
+        #skills
+        #skills-cards
+        article
+        .skills-cards-name-low {
+        left: 50%;
+        height: auto;
+        position: absolute;
+        padding: 5px;
+        -webkit-transform: translate(-50%, 0%);
+        transform: translate(-50%, 0%);
+        background-color: #110e1b;
+        width: 125px;
+        color: #fafafa;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        display: none;
+        font-size: 1.8rem;
+    }
+
+    #s-skills
+        .grid-layout
+        #skills
+        #skills-cards
+        article
+        .skills-cards-name-high {
+        top: -50px;
+    }
+
+    #s-skills
+        .grid-layout
+        #skills
+        #skills-cards
+        article
+        .skills-cards-name-low {
+        bottom: -50px;
+    }
+
+    #s-skills .grid-layout #skills #skills-cards article .aumento-hover {
+        bottom: -75px;
+    }
+
+    #s-skills .grid-layout #skills #skills-cards article .skills-icons {
+        width: 60px;
+    }
+</style>

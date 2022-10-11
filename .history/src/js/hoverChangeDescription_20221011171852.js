@@ -3,11 +3,11 @@ export function hoverChangeDescription(nameCard, text) {
     let description = document.getElementById("des")
   
     document.querySelector(nameCard).addEventListener("mouseover", () => {
-      description.innerHTML = text;
+      changeDescription.innerHTML = text;
     });
   
     document.querySelector(nameCard).addEventListener("mouseout", () => {
-      description.innerHTML = `Hover over a card to see its description`;
+      changeDescription.innerHTML = `Hover over a card to see its description`;
     });
   }
   

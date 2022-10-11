@@ -1,8 +1,25 @@
 // import { initScrollReveal } from "./scrollReveal.js";
+import ScrollReveal from "scrollreveal";
 import { hoverChangeDescription } from "./hoverChangeDescription.js";
 import { menu } from "./menu.js";   
 
 menu();
+// smooth scroll
+const scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 1000,
+    speedAsDuration: true,
+    easing: 'easeInOutCubic',
+    offset: 0,
+    updateURL: false,
+    popstate: true,
+});
+ScrollReveal().reveal(".delaySmallReveal", { delay: 200 });
+ScrollReveal().reveal(".delayMediumReveal", { delay: 300 });
+ScrollReveal().reveal(".delayLargeReveal", { delay: 400 });
+ScrollReveal().reveal(".delayExtraBigReveal", { delay: 600 });
+ScrollReveal().reveal(".intervalCardReveal", { interval: 400 });
+
+
 hoverChangeDescription(
   ".html",
   "HTML is the standard markup language for creating Web pages."

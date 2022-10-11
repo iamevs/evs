@@ -1,8 +1,12 @@
-// import { initScrollReveal } from "./scrollReveal.js";
+import { initScrollReveal } from "./initScrollReveal";
+import { typeWrite } from "./typeWrite.js";
 import { hoverChangeDescription } from "./hoverChangeDescription.js";
-import { menu } from "./menu.js";   
+import { menu } from "./menu.js";
 
 menu();
+initScrollReveal();
+typeWrite(document.querySelector(".typewriter"));
+
 hoverChangeDescription(
   ".html",
   "HTML is the standard markup language for creating Web pages."

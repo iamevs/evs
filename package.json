@@ -13,6 +13,7 @@
   "dependencies": {
     "astro": "^1.4.6",
     "bootstrap": "^5.2.2",
-    "jquery": "^3.6.1"
+    "jquery": "^3.6.1",
+    "scrollreveal": "^4.0.9"
   }
 }

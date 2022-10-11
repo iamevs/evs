@@ -4,7 +4,7 @@ import { menu } from "./menu.js";
 
 menu();
 hoverChangeDescription(
-  ".html",
+  "html",
   "HTML is the standard markup language for creating Web pages."
 );
 hoverChangeDescription(

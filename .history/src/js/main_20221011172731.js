@@ -1,4 +1,5 @@
 // import { initScrollReveal } from "./scrollReveal.js";
+import ScrollReveal from "scrollreveal";
 import { hoverChangeDescription } from "./hoverChangeDescription.js";
 import { menu } from "./menu.js";   
 

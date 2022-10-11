@@ -1,4 +1,4 @@
-function initScrollReveal() {
+export function initScrollReveal() {
   const sr = ScrollReveal({
     origin: "top",
     distance: "50px",
@@ -11,5 +11,3 @@ function initScrollReveal() {
   sr.reveal(".delayExtraBigReveal", { delay: 600 });
   sr.reveal(".intervalCardReveal", { interval: 400 });
 }
-
-export { initScrollReveal };

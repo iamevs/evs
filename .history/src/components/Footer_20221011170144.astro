@@ -3,23 +3,14 @@ const currentYear = new Date().getFullYear();
 ---
 
 <footer>
-	<div class="grid-layout">
-	  <p id="direitos-autorais">@ {currentYear} <a href="https://www.github.com/iamevs/">EVS</a> </p>
-	  <div>
-		<p>Powered by</p>
-		<img
-		  src="assets/icons/evs-logo-footer.svg"
-		  alt="EVS"
-		  width="60px"
-		  height="60px"
-		/>
-	  </div>
-	</div>
-  </footer>
+	&copy; {currentYear}
+	<a href="https://www.github.com/iamevs">EVS</a>
+	<small class="byline">🖤 Built by Astro</small>
+</footer>
 <style>
 	footer {
 		text-align: center;
-		margin-top: 50px;
+		/* margin-top: 72px; */
 	}
 
 	footer .grid-layout {
@@ -53,7 +44,7 @@ const currentYear = new Date().getFullYear();
 	}
 
 	footer .grid-layout p {
-		color: #000;
+		color: #cccccc;
 		text-align: center;
 		font-family: "DM Sans";
 		font-size: 1.8rem;
