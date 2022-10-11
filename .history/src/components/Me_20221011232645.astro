@@ -17,7 +17,7 @@
             </div>
             <article id="about-text">
                 <h2 class="delaySmallReveal">About EVS</h2>
-                <p class="text">
+                <p class="delayMediumReveal" id="text">
                     I am determined to be cheerful and happy in whatever
                     situation I may find myself. For I have learned that the
                     greater part of our misery or unhappiness is deter.
@@ -28,16 +28,18 @@
 </section>
 
 <style>
-    .text {
+    #text {
         line-height: 3.2rem;
         color: #cccccc;
         font-family: "DM Sans";
         font-size: 1.8rem;
-        cursor: pointer;
     }
-    .text > span {
+    #text span {
         position: relative;
         display: inline-block;
-        cursor:grabbing;
+        cursor: pointer;
+    }
+    #text span .active-text {
+        color: #000 !important;
     }
 </style>

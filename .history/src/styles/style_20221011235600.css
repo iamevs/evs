@@ -503,6 +503,10 @@ header .grid-layout nav .nav-list li a:hover {
     filter:blur(0);
     transform: translate(0,0) rotate(0deg) scale(1);
   }
+  50%{
+    opacity: 1;
+    pointer-events: none;
+  }
   100% {
     opacity: 0;
     filter:blur(20px);

@@ -40,12 +40,12 @@ hoverChangeDescription(
 
 // about-text animation
 
-const text = document.querySelector(".text");
+const text = document.querySelector(".about-text");
 text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
 
 const element = document.querySelectorAll("span");
 for (let i = 0; i < element.length; i++) {
   element[i].addEventListener("mouseover", function () {
-    this.classList.add("active-text");
+    this.classList.add("active");
   });
 }

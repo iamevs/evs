@@ -40,4 +40,21 @@
         display: inline-block;
         cursor:grabbing;
     }
+    .text span .active-text {
+        animation: text 0.5s ease-in-out;
+    }
+    @keyframes text {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+    span.active-text{
+        color:#1f1f1f !important;
+        filter:blur(0.5px);
+    }
 </style>

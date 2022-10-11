@@ -501,11 +501,10 @@ header .grid-layout nav .nav-list li a:hover {
   0% {
     opacity: 1;
     filter:blur(0);
-    transform: translate(0,0) rotate(0deg) scale(1);
   }
+
   100% {
     opacity: 0;
     filter:blur(20px);
-    transform: translate(300,-300) rotate(720deg) scale(4);
   }
 }

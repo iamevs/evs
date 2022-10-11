@@ -40,7 +40,7 @@ hoverChangeDescription(
 
 // about-text animation
 
-const text = document.querySelector(".text");
+const text = document.getElementById("text");
 text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
 
 const element = document.querySelectorAll("span");
