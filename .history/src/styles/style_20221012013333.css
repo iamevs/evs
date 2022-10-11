@@ -575,7 +575,7 @@ header.sticky .logo {
   position: absolute;
   font-size: 4em;
   /* left: 100px; */
-  right: 80%;
+  top: 20px;
   transform: translate(0, -50%);
 }
 

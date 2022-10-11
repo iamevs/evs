@@ -574,8 +574,7 @@ header .logo {
 header.sticky .logo {
   position: absolute;
   font-size: 4em;
-  /* left: 100px; */
-  right: 80%;
+  left: 100px;
   transform: translate(0, -50%);
 }
 
@@ -596,8 +595,6 @@ header.sticky nav ul{
   transform:translateX(0px);
   opacity: 1;
   transition-delay:0.75s;
-  opacity: 1;
-  visibility: visible;
 }
 nav ul li {
   list-style: none;
@@ -636,6 +633,10 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     transition: 0.25s;
+  }
+  header.sticky nav ul{
+    opacity: 1;
+    visibility: visible;
   }
   nav ul li a{
     font-size: 2em;

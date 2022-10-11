@@ -63,7 +63,3 @@ document.querySelector(".toggle").onclick = function(){
   this.classList.toggle("active");
   nav.classList.toggle("active");
 }
-nav.onclick = function(){
-  this.classList.remove("active");
-  document.querySelector(".toggle").classList.remove("active");
-}

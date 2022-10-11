@@ -53,17 +53,7 @@ for (let i = 0; i < element.length; i++) {
 
 // navbar animation
 
-window.addEventListener("scroll", function () {
-  const header = document.querySelector("header");
-  header.classList.toggle("sticky", window.scrollY > 0);
-});
-
-let nav = document.querySelector("nav");
-document.querySelector(".toggle").onclick = function(){
-  this.classList.toggle("active");
-  nav.classList.toggle("active");
-}
-nav.onclick = function(){
-  this.classList.remove("active");
-  document.querySelector(".toggle").classList.remove("active");
-}
+// window.addEventListener("scroll", function () {
+//   const header = document.querySelector("header");
+//   header.classList.toggle("sticky", window.scrollY > 0);
+// });

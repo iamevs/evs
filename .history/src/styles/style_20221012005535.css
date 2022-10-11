@@ -538,13 +538,15 @@ header {
   width: 100%;
   height: 100vh;
   background-color: #1f1f1f;
-  padding-right: 100px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   transition: 1s;
 }
 
+header.sticky {
+  height: 80px;
+}
 
 header .banner {
   position: absolute;
@@ -574,7 +576,6 @@ header .logo {
 header.sticky .logo {
   position: absolute;
   font-size: 4em;
-  /* left: 100px; */
   right: 80%;
   transform: translate(0, -50%);
 }
@@ -589,15 +590,13 @@ nav ul {
   position: relative;
   display: flex;
   transition: 0.25s;
+  padding-right: 100px;
   transform:translateX(100px);
   opacity: 0;
 }
 header.sticky nav ul{
   transform:translateX(0px);
   opacity: 1;
-  transition-delay:0.75s;
-  opacity: 1;
-  visibility: visible;
 }
 nav ul li {
   list-style: none;
@@ -613,49 +612,4 @@ nav ul li a {
 
 nav ul li a:hover {
   color: #1f1f1f;
-}
-
-@media(max-width: 900px){
-  header{
-    padding-right: 40px;
-  }
-  nav ul{
-    display: none;
-    opacity: 0;
-    visibility: hidden;
-  }
-  nav.active ul{
-    position: fixed;
-    top:80px;
-    left:0;
-    width:100%;
-    height:calc(100%-80px);
-    background-color: #1f1f1f;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: 0.25s;
-  }
-  nav ul li a{
-    font-size: 2em;
-    padding: 20px 0;
-  }
-  header.sticky .toggle{
-    position: fixed;
-    top:15px;
-    right:40px;
-    width:50px;
-    height:50px;
-    cursor: pointer;
-    /* url for the hamburger menu img */
-    background: url("https://i.imgur.com/8X9Z4Zm.png") no-repeat center center;
-    background-size: 30px;
-  }
-  header.sticky .toggle.active{
-    background: url("https://i.imgur.com/8X9Z4Zm.png") no-repeat center center;
-    background-size: 30px;
-    transform: rotate(180deg);
-  }
-
 }

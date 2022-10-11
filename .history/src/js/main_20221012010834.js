@@ -58,12 +58,6 @@ window.addEventListener("scroll", function () {
   header.classList.toggle("sticky", window.scrollY > 0);
 });
 
-let nav = document.querySelector("nav");
 document.querySelector(".toggle").onclick = function(){
   this.classList.toggle("active");
-  nav.classList.toggle("active");
-}
-nav.onclick = function(){
-  this.classList.remove("active");
-  document.querySelector(".toggle").classList.remove("active");
 }

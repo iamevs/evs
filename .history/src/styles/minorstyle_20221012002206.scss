@@ -1,0 +1,8 @@
+header.sticky{
+    .grid-layout #home #home-container-text h1{
+        position:absolute;
+        font-size: 2em;
+        left:100%;
+        transform:translate(0,-50%);
+      }
+}

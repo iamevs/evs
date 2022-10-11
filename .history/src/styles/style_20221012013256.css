@@ -574,9 +574,8 @@ header .logo {
 header.sticky .logo {
   position: absolute;
   font-size: 4em;
-  /* left: 100px; */
-  right: 80%;
-  transform: translate(0, -50%);
+  left: 100px;
+  transform: translate(0, 50%);
 }
 
 nav {

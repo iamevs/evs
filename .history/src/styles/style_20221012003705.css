@@ -100,7 +100,7 @@ header {
   }
 }
 
-/* header .grid-layout nav {
+header .grid-layout nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,13 +114,13 @@ header {
   flex-wrap: wrap;
   height: 8vh;
   padding: 0px 8px;
-} */
+}
 
 header .grid-layout nav img {
   width: 150px;
 }
 
-/* header .grid-layout nav .nav-list {
+header .grid-layout nav .nav-list {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -129,7 +129,7 @@ header .grid-layout nav img {
 
 header .grid-layout nav .nav-list li {
   margin-left: 48px;
-} */
+}
 
 @media screen and (max-width: 992px) {
   header .grid-layout nav .nav-list li {
@@ -317,8 +317,7 @@ header .grid-layout nav .nav-list li a:hover {
   font-weight: 400;
   font-family: "DM Sans";
 }
-
-header.sticky {
+header.sticky{
   height: 80px;
 }
 
@@ -519,143 +518,71 @@ header.sticky .grid-layout #home #home-container-text h1 {
 @keyframes text {
   0% {
     opacity: 1;
-    filter: blur(0);
-    transform: translate(0, 0) rotate(0deg) scale(1);
+    filter:blur(0);
+    transform: translate(0,0) rotate(0deg) scale(1);
   }
-
   100% {
     opacity: 0;
-    filter: blur(20px);
-    transform: translate(300, -300) rotate(720deg) scale(4);
+    filter:blur(20px);
+    transform: translate(300,-300) rotate(720deg) scale(4);
   }
 }
 
 /* animated navbar */
-header {
+header{
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
   background-color: #1f1f1f;
-  padding-right: 100px;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items:center;
   transition: 1s;
 }
 
-
-header .banner {
+header .banner{
   position: absolute;
-  top: 0;
-  left: 0;
+  top:0;
+  left:0;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-header.sticky .banner {
-  opacity: 0.5;
-  filter: blur(10px);
-}
-header .logo {
+header .logo{
   position: absolute;
   top: 50%;
-  right: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  color: #fff;
+  color:#fff;
   font-size: 15vw;
   font-weight: 600;
   transition: 1s;
   text-decoration: none;
   z-index: 1;
 }
-
-header.sticky .logo {
-  position: absolute;
-  font-size: 4em;
-  /* left: 100px; */
-  right: 80%;
-  transform: translate(0, -50%);
-}
-
-nav {
+nav{
   position: relative;
   display: flex;
   z-index: 1;
 }
 
-nav ul {
-  position: relative;
-  display: flex;
-  transition: 0.25s;
-  transform:translateX(100px);
-  opacity: 0;
+nav ul{
+  position:relative;
+  display:flex;
+  transition:0.25s;
 }
-header.sticky nav ul{
-  transform:translateX(0px);
-  opacity: 1;
-  transition-delay:0.75s;
-  opacity: 1;
-  visibility: visible;
-}
-nav ul li {
+nav ul li{
   list-style: none;
 }
-
-nav ul li a {
-  color: #fff;
-  display: inline-block;
-  padding: 20px 15px;
+nav ul li a{
+  color:#fff;
+  display:inline-block;
+  padding:20px 15px;
   font-size: 1.6em;
   text-decoration: none;
 }
-
-nav ul li a:hover {
-  color: #1f1f1f;
-}
-
-@media(max-width: 900px){
-  header{
-    padding-right: 40px;
-  }
-  nav ul{
-    display: none;
-    opacity: 0;
-    visibility: hidden;
-  }
-  nav.active ul{
-    position: fixed;
-    top:80px;
-    left:0;
-    width:100%;
-    height:calc(100%-80px);
-    background-color: #1f1f1f;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: 0.25s;
-  }
-  nav ul li a{
-    font-size: 2em;
-    padding: 20px 0;
-  }
-  header.sticky .toggle{
-    position: fixed;
-    top:15px;
-    right:40px;
-    width:50px;
-    height:50px;
-    cursor: pointer;
-    /* url for the hamburger menu img */
-    background: url("https://i.imgur.com/8X9Z4Zm.png") no-repeat center center;
-    background-size: 30px;
-  }
-  header.sticky .toggle.active{
-    background: url("https://i.imgur.com/8X9Z4Zm.png") no-repeat center center;
-    background-size: 30px;
-    transform: rotate(180deg);
-  }
-
+nav ul li a:hover{
+  color:#1f1f1f;
 }
