@@ -3,6 +3,7 @@ import { hoverChangeDescription } from "./hoverChangeDescription.js";
 import { menu } from "./menu.js";   
 
 menu();
+ 
 
 // about-text animation
 
