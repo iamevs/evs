@@ -80,15 +80,17 @@ import Html from "./../../public/assets/coding.png";
 <style>
     .section-skills{
         background: #1f1f1f;
-        padding: 100px;
     }
     .skills-container{
         position: relative;
         display: flex;
         background: #1f1f1f;
-        justify-content: space-between;
+        justify-content: space-evenly;
         flex-wrap: wrap;
         padding: 5rem 0;
+
+        /* padding: 20px 0; */
+        /* padding-left: 30px; */
 
     }
     .skills-card{
@@ -114,26 +116,16 @@ import Html from "./../../public/assets/coding.png";
         display: flex;
         justify-content: center;
         align-items: center;
-        overflow: hidden; 
+        overflow: hidden;
         border-radius: 20px;
         border:1px solid rgba(255,255,255,0.2);
         box-shadow : 5px 5px 30px rgba(0,0,0,0.2);
         width: calc(100% - 20px);
-        transition: 0.5s ease-in-out;
-    }
-    .skills-card:hover .imgBx{
-        height: 150px;
-        width: 150px;
-        left: -75px;
-        top: calc(50% - 75px);
+        /* background: #3ff; */
     }
     .skills-card .imgBx img{
         position: relative;
         height:230px;
-        transition: 0.5s ease-in-out;
-    }
-    .skills-card:hover .imgBx img{
-        transition: 0.5s ease-in-out;
     }
 
 </style>
