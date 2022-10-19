@@ -401,7 +401,7 @@ header.sticky .grid-layout #home #home-container-text h1 {
 
 #about {
   padding: 96px 48px;
-  background-color: #212529;
+  background-color: #1f1f1f;
 }
 
 @media screen and (max-width: 992px) {
@@ -427,7 +427,24 @@ header.sticky .grid-layout #home #home-container-text h1 {
 #about .grid-layout #about-photo {
   width: 50%;
   padding-right: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  -webkit-transition: 1s all ease;
+  transition: 1s all ease;
+}
+
+
+#about .grid-layout #about-photo:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 #about .grid-layout #about-photo div {
@@ -455,10 +472,8 @@ header.sticky .grid-layout #home #home-container-text h1 {
 }
 
 #about .grid-layout #about-photo img {
-  border-radius: 20px;
   width: 100%;
   max-width: 400px;
-  box-shadow: -10px 10px 15px rgba(0, 0, 0, .8);
 }
 
 @media screen and (max-width: 1200px) {

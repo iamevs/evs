@@ -1,5 +1,5 @@
 ---
-import Img from "./../../public/assets/evs.jpg";
+// import Img from "./../../public/assets/bg1.jpg";
 ---
 
 <section id="about">
@@ -7,7 +7,7 @@ import Img from "./../../public/assets/evs.jpg";
         <div id="about-m">
             <div id="about-photo">
                 <img
-                    src={Img}
+                    src="https://images.unsplash.com/photo-1665478613994-a3636ae775b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
                     width="400px"
                     height="400px"
                     alt="ilustração do iuricode"
@@ -17,10 +17,7 @@ import Img from "./../../public/assets/evs.jpg";
             </div>
             <article id="about-text">
                 <p class="hello-text">
-                    Hello there, I'm EVS 
-                    <span id="emoji">
-                        👋
-                    </span>
+                    Hello there, I'm EVS <span>👋<span></span></span>
                 </p>
                 <h1 id="about-head">
                     UG Student <span>&#38;</span><br /> FullStack Web Developer
@@ -39,17 +36,7 @@ import Img from "./../../public/assets/evs.jpg";
     #about-m {
         padding-top: 50px;
     }
-    #emoji{
-        font-size: 2.5rem;
-        text-shadow:-10px 10px 15px rgba(0, 0, 0, .8);  
-    }
-    .hello-text{
-        color: #ccc;
-        font-size: 1.7rem;
-        font-weight: 500;
-        margin-bottom: 20px;
-        text-shadow: -10px 10px 15px rgba(0, 0, 0, .8);
-    }
+
     #about-head{
         font-size: 4.4rem;
         color : #3a86ff;
@@ -69,8 +56,5 @@ import Img from "./../../public/assets/evs.jpg";
         position: relative;
         display: inline-block;
         cursor: grabbing;
-    }
-    .about-photo img{
-        border-radius: 50%;
     }
 </style>

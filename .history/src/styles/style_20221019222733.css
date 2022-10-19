@@ -425,7 +425,7 @@ header.sticky .grid-layout #home #home-container-text h1 {
 }
 
 #about .grid-layout #about-photo {
-  width: 50%;
+  width: 60%;
   padding-right: 100px;
   display: flex;
 }
@@ -455,10 +455,8 @@ header.sticky .grid-layout #home #home-container-text h1 {
 }
 
 #about .grid-layout #about-photo img {
-  border-radius: 20px;
   width: 100%;
   max-width: 400px;
-  box-shadow: -10px 10px 15px rgba(0, 0, 0, .8);
 }
 
 @media screen and (max-width: 1200px) {
