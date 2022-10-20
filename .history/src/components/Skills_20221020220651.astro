@@ -2,9 +2,6 @@
 ---
 
 <div class="section-skills">
-    <h1 id="about-head">
-        Skills
-    </h1>
     <div class="right">
         <div class="skill-card">
             <figure>
@@ -17,24 +14,21 @@
                 </figcaption>
             </figure>
         </div>
-    </div>  
+    </div>
 </div>
 
 <style>
+    /* @import url(https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic); */
     .section-skills {
         background: #212529;
         padding: 100px;
     }
-
-    #about-head{
-        font-size: 4.4rem;
-        color : #3a86ff;
-        font-weight: 600;
-        margin-bottom: 20px;
-        text-shadow: -10px 10px 15px rgba(0, 0, 0, .8);
+    .right {
+        display: flex;
+        justify-content: flex-end;
     }
 
-    .skill-card {
+    .skills-card {
         color: #c9d1d9;
         display: flex;
         align-items: center;
@@ -50,17 +44,16 @@
         margin-right: 20px;
     }
 
-    .skill-card img {
+    .skills-card img {
         height: 5em;
         width: 5em;
     }
 
-    .skill-card:hover {
+    .skills-card:hover {
         transform: scale(1.05);
-        cursor: pointer;
     }
 
-    .skill-card figure {
+    .skills-card figure {
         width: 10em;
         height: 8em;
         display: flex;
@@ -73,7 +66,7 @@
         align-items: center;
     }
 
-    .skill-card figure > figcaption {
+    .skills-card figure > figcaption {
         font-weight: bold;
         text-align: center;
         opacity: 0;
@@ -82,12 +75,12 @@
         width: 10em;
     }
 
-    .skill-card:hover > figure > img {
+    .skills-card:hover > figure > img {
         filter: blur(10px);
         transition: filter 0.5s;
     }
 
-    .skill-card:hover > figure > figcaption {
+    .skills-card:hover > figure > figcaption {
         transform: scale(0.9);
         opacity: 1;
         transition: scale, opacity, 0.5s;
