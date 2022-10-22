@@ -4,7 +4,7 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   /* cursor: url(./../cursor.png); */
-  /* cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/happy.png"), auto; */
+  cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/happy.png"), auto;
 }
 
 ::-moz-selection {
@@ -665,6 +665,7 @@ nav ul li a:hover {
     right: 40px;
     width: 50px;
     height: 50px;
+    cursor: pointer;
     /* url for the hamburger menu img */
     background: url("https://i.imgur.com/8X9Z4Zm.png") no-repeat center center;
     background-size: 30px;
