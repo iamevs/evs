@@ -1,16 +1,16 @@
 ---
-import Sphereskill from "./sphereskill.astro";
 ---
 
 <div class="section-skills" id="skills">
+    <!-- <h1 id="about-head" class="main-head">Skills</h1>
+
+    <h2 id="about-head" class="sub">Front-End 🕸️</h2>
+    <div class="skill-container">
+        
+    </div> -->
     <div class="skills-container">
-        <div class="skills-right right">
-            <Sphereskill />
-        </div>
-        <div class="skills-left left">
-            <h1 id="about-head" class="main-head">Skills</h1>
-            <p></p>
-        </div>
+        <div class="skills-left left"></div>
+        <div class="skills-right right"></div>
     </div>
 </div>
 
@@ -19,34 +19,30 @@ import Sphereskill from "./sphereskill.astro";
         background: #212529;
         /* padding: 100px; */
     }
-    .skills-container {
+    .skills-container{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content:space-evenly;
         align-items: center;
-        width: 100%;
+        width:100%;
         padding: 20px;
         /* flex-direction: row; */
     }
-    .left,
-    .right {
+    .left, .right {
         justify-content: space-around;
         background: #212529;
         /* border: 2px solid #fff; */
         position: relative;
-        flex: 1;
-        /* height: 100vh; */
-        height:auto;
+        flex:1;
+        height:100vh;
         width: 300px;
     }
     .left {
         margin-right: 20px;
-        padding: 20px;
     }
-    @media (max-width: 900px) {
-        .left,
-        .right {
-            flex: 100%;
+    @media(max-width: 1200px){
+        .left, .right {
+            flex:100%;
             margin: 0;
         }
         .left {

@@ -36,21 +36,26 @@ nav.onclick = function(){
 
 let filename = [
   'HTML', 'CSS', 'JAVASCRIPT',
-  'Bootstrap', 'Tailwind', 'REACT',
+  'SWIFT', 'MONGOOSE', 'REACT',
   'PYTHON', 'SASS',
-  'C/C++', 'NODEJS', 'MONGODB',
-  'EXPRESS', 'MYSQL', 'JQUERY', 'JAVA','Svelte','Astro','Next js','Three js', 'D3 js', 'PHP', 'NPM'
+  'DJANGO', 'NODEJS', 'MONGODB',
+  'EXPRESS', 'MYSQL', 'JQUERY', 'JAVA'
 ];
 
 var tagCloud = TagCloud('.Sphere', filename, {
   
-  radius: 350,
-  maxSpeed: 'fast',
+  radius: 400,
+  maxSpeed: 'normal',
   initSpeed: 'fast',
+
+  // Rolling direction [0 (top) , 90 (left), 135 (right-bottom)] 
   direction: 135,
+
+  // interaction with mouse or not [Default true (decelerate to rolling init speed, and keep rolling with mouse).]
   keep: true
 
 });
 
+// Giving color to each text in sphere
 var color = '#3a86ff';
 document.querySelector('.Sphere').style.color = color; 

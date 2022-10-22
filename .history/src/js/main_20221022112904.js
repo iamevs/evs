@@ -45,7 +45,7 @@ let filename = [
 var tagCloud = TagCloud('.Sphere', filename, {
   
   radius: 350,
-  maxSpeed: 'fast',
+  maxSpeed: 'normal',
   initSpeed: 'fast',
   direction: 135,
   keep: true

@@ -1810,7 +1810,7 @@ isexe@^2.0.0:
   resolved "https://registry.yarnpkg.com/isexe/-/isexe-2.0.0.tgz#e8fbf374dc556ff8947a10dcb0572d633f2cfa10"
   integrity sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==
 
-jquery@^3.6.1:
+jquery@>=1.4, jquery@^3.6.1:
   version "3.6.1"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.6.1.tgz#fab0408f8b45fc19f956205773b62b292c147a16"
   integrity sha512-opJeO4nCucVnsjiXOE+/PcCgYw9Gwpvs/a6B1LL/lQhwWwpbVEVYDZ1FokFr8PRc7ghYlrFPuyHuiiDNTQxmcw==
@@ -3178,6 +3178,13 @@ synckit@^0.7.0:
   dependencies:
     "@pkgr/utils" "^2.3.0"
     tslib "^2.4.0"
+
+tagcloud@^1.1.0-1:
+  version "1.1.0-1"
+  resolved "https://registry.yarnpkg.com/tagcloud/-/tagcloud-1.1.0-1.tgz#1f148338dcef013b38f512d4f8d56a237ea06c80"
+  integrity sha512-9uLAhjXykfGnnJxGtFxTJkPGI578SgUkMfMXapvzUs9O+XtiK8P4eyFipaFX/WE887lCX2mEuzea2X3e9T2oaA==
+  dependencies:
+    jquery ">=1.4"
 
 tealight@0.3.6:
   version "0.3.6"

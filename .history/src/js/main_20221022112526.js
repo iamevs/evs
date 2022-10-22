@@ -39,13 +39,13 @@ let filename = [
   'Bootstrap', 'Tailwind', 'REACT',
   'PYTHON', 'SASS',
   'C/C++', 'NODEJS', 'MONGODB',
-  'EXPRESS', 'MYSQL', 'JQUERY', 'JAVA','Svelte','Astro','Next js','Three js', 'D3 js', 'PHP', 'NPM'
+  'EXPRESS', 'MYSQL', 'JQUERY', 'JAVA','Svelte','Astro','Next js','Three js', 'D3 js'
 ];
 
 var tagCloud = TagCloud('.Sphere', filename, {
   
-  radius: 350,
-  maxSpeed: 'fast',
+  radius: 300,
+  maxSpeed: 'normal',
   initSpeed: 'fast',
   direction: 135,
   keep: true
@@ -53,4 +53,6 @@ var tagCloud = TagCloud('.Sphere', filename, {
 });
 
 var color = '#3a86ff';
+var marginright = '10px';
 document.querySelector('.Sphere').style.color = color; 
+document.querySelector('.Sphere').style.margin-right = marginright; 

@@ -33,24 +33,3 @@ nav.onclick = function(){
   this.classList.remove("active");
   document.querySelector(".toggle").classList.remove("active");
 }
-
-let filename = [
-  'HTML', 'CSS', 'JAVASCRIPT',
-  'Bootstrap', 'Tailwind', 'REACT',
-  'PYTHON', 'SASS',
-  'C/C++', 'NODEJS', 'MONGODB',
-  'EXPRESS', 'MYSQL', 'JQUERY', 'JAVA','Svelte','Astro','Next js','Three js', 'D3 js', 'PHP', 'NPM'
-];
-
-var tagCloud = TagCloud('.Sphere', filename, {
-  
-  radius: 350,
-  maxSpeed: 'fast',
-  initSpeed: 'fast',
-  direction: 135,
-  keep: true
-
-});
-
-var color = '#3a86ff';
-document.querySelector('.Sphere').style.color = color; 
