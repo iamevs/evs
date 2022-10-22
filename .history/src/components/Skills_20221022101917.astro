@@ -9,45 +9,35 @@
         
     </div> -->
     <div class="skills-container">
-        <div class="skills-left left"></div>
-        <div class="skills-right right"></div>
+        <div class="skills-left"></div>
+        <div class="skills-right"></div>
     </div>
 </div>
 
 <style>
     .section-skills {
         background: #212529;
-        /* padding: 100px; */
+        padding: 100px;
     }
-    .skills-container{
+    .skill-container{
         display: flex;
         flex-wrap: wrap;
-        justify-content:space-evenly;
+        justify-content: center;
         align-items: center;
-        width:100%;
+        flex-direction: row;
+    }
+    .skills-left {
+        width: calc(50%-102px);
+        height: 100vh;
+        background: #699ccf;
         padding: 20px;
-        /* flex-direction: row; */
     }
-    .left, .right {
-        justify-content: space-around;
-        background: #212529;
-        border: 2px solid #fff;
-        position: relative;
-        flex:1;
-        height:100vh;
-        width: 300px;
-    }
-    .left {
-        margin-right: 20px;
-    }
-    @media(max-width: 1200px){
-        .left, .right {
-            flex:100%;
-            margin: 0;
-        }
-        .left {
-            margin-bottom: 20px;
-        }
+    .skills-right {
+        width: calc(50%-102px);
+        /* width: auto; */
+        height: 100vh;
+        background: #ceca43;
+        padding: 20px;
     }
     .sub {
         font-size: 2.5em;
@@ -58,12 +48,23 @@
         font-weight: 600;
     }
     #about-head {
-        /* font-size: 4.4rem; */
+        //font-size: 4.4rem;
         color: #3a86ff;
-        /* font-weight: 600; */
+        //font-weight: 600;
         margin-bottom: 20px;
         text-shadow: -10px 10px 15px rgba(0, 0, 0, 0.8);
     }
+
+    .right {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        /* justify-content:flex-end; */
+        flex-wrap: wrap;
+        width: 50%;
+        margin-right: 0;
+    }
+
     .skill-card {
         color: #c9d1d9;
         display: flex;

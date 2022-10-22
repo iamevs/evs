@@ -1,0 +1,164 @@
+---
+---
+
+<div class="section-skills">
+    <h1 id="about-head" class="main-head">Skills</h1>
+
+    <h2 id="about-head" class="sub">Front-End 🕸️</h2>
+    <div class="skill-container">
+        <div class="right">
+            <div class="skill-card">
+                <figure>
+                    <img
+                        src="https://code.visualstudio.com/assets/images/code-stable.png"
+                        alt="Visual Studio Code"
+                    />
+                    <figcaption>
+                        <p>Visual Studio Code</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="skill-card">
+                <figure>
+                    <img
+                        src="https://code.visualstudio.com/assets/images/code-stable.png"
+                        alt="Visual Studio Code"
+                    />
+                    <figcaption>
+                        <p>Visual Studio Code</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="skill-card">
+                <figure>
+                    <img
+                        src="https://code.visualstudio.com/assets/images/code-stable.png"
+                        alt="Visual Studio Code"
+                    />
+                    <figcaption>
+                        <p>Visual Studio Code</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="skill-card">
+                <figure>
+                    <img
+                        src="https://code.visualstudio.com/assets/images/code-stable.png"
+                        alt="Visual Studio Code"
+                    />
+                    <figcaption>
+                        <p>Visual Studio Code</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="skill-card">
+                <figure>
+                    <img
+                        src="https://code.visualstudio.com/assets/images/code-stable.png"
+                        alt="Visual Studio Code"
+                    />
+                    <figcaption>
+                        <p>Visual Studio Code</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .section-skills {
+        background: #212529;
+        padding: 100px;
+    }
+    .skill-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sub {
+        font-size: 2.5em;
+        text-shadow: -10px 10px 15px rgba(0, 0, 0, 0.8);
+    }
+    .main-head {
+        font-size: 4.4rem;
+        font-weight: 600;
+    }
+    #about-head {
+        //font-size: 4.4rem;
+        color: #3a86ff;
+        //font-weight: 600;
+        margin-bottom: 20px;
+        text-shadow: -10px 10px 15px rgba(0, 0, 0, 0.8);
+    }
+
+    .right {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        /* justify-content:flex-end; */
+        flex-wrap: wrap;
+        width: 50%;
+        margin-right: 0;
+    }
+
+    .skill-card {
+        color: #c9d1d9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 10em;
+        height: 9em;
+        background-color: #161b22;
+        border-radius: 6px;
+        box-shadow: 15px 15px 15px rgb(0 0 0 / 20%), 0 10px 8px rgb(0 0 0 / 5%),
+            0 4px 4px rgb(0 0 0 / 4%), 0 2px 2px rgb(0 0 0 / 3%);
+        transition: transform 0.5s;
+        overflow: hidden;
+        margin: 20px;
+        flex-direction: column;
+    }
+
+    .skill-card img {
+        height: 5em;
+        width: 5em;
+    }
+
+    .skill-card:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+
+    .skill-card figure {
+        width: 10em;
+        height: 8em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .skill-card figure > figcaption {
+        font-weight: bold;
+        text-align: center;
+        opacity: 0;
+        transform: scale(1.15);
+        position: absolute;
+        width: 10em;
+    }
+
+    .skill-card:hover > figure > img {
+        filter: blur(10px);
+        transition: filter 0.5s;
+    }
+
+    .skill-card:hover > figure > figcaption {
+        transform: scale(0.9);
+        opacity: 1;
+        transition: scale, opacity, 0.5s;
+    }
+</style>
