@@ -428,7 +428,6 @@ header.sticky .grid-layout #home #home-container-text h1 {
   width: 50%;
   padding-right: 100px;
   display: flex;
-  padding-bottom:30px;
 }
 
 #about .grid-layout #about-photo div {
@@ -465,30 +464,17 @@ header.sticky .grid-layout #home #home-container-text h1 {
 @media screen and (max-width: 740px) {
   #about .grid-layout #about-photo {
     flex: 100%;
-    justify-content: flex-end;
-    width:186px;
-    /* height:400px; */
   }
-
-  #about-text {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
+  #about{
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    padding-left: 0px;
+    padding: 48px 16px;
+    justify-content: center;
   }
 }
 
-@media(min-width:740px) {
-  #about .grid-layout #about-text {
-    width: 50%;
-  }
+#about .grid-layout #about-text {
+  width: 50%;
 }
-
 
 /* @media screen and (max-width: 1200px) {
   #about .grid-layout #about-text {
@@ -558,12 +544,10 @@ header .banner {
   height: 100%;
   object-fit: cover;
 }
-
 header.sticky .banner {
   opacity: 0.5;
   filter: blur(10px);
 }
-
 header .logo {
   position: absolute;
   top: 50%;
@@ -595,18 +579,16 @@ nav ul {
   position: relative;
   display: flex;
   transition: 0.25s;
-  transform: translateX(100px);
+  transform:translateX(100px);
   opacity: 0;
 }
-
-header.sticky nav ul {
-  transform: translateX(0px);
+header.sticky nav ul{
+  transform:translateX(0px);
   opacity: 1;
-  transition-delay: 0.75s;
+  transition-delay:0.75s;
   opacity: 1;
   visibility: visible;
 }
-
 nav ul li {
   list-style: none;
 }
@@ -628,23 +610,21 @@ nav ul li a:hover {
   animation: zoom 0.5s ease forwards;
 }
 
-@media(max-width: 900px) {
-  header {
+@media(max-width: 900px){
+  header{
     padding-right: 40px;
   }
-
-  nav ul {
+  nav ul{
     display: none;
     opacity: 0;
     visibility: hidden;
   }
-
-  nav.active ul {
+  nav.active ul{
     position: fixed;
-    top: 80px;
-    left: 0;
-    width: 100%;
-    height: calc(100%-80px);
+    top:80px;
+    left:0;
+    width:100%;
+    height:calc(100%-80px);
     background-color: #1f1f1f;
     display: flex;
     flex-direction: column;
@@ -652,25 +632,22 @@ nav ul li a:hover {
     align-items: center;
     transition: 0.25s;
   }
-
-  nav ul li a {
+  nav ul li a{
     font-size: 2em;
     padding: 20px 0;
   }
-
-  header.sticky .toggle {
+  header.sticky .toggle{
     position: fixed;
-    top: 15px;
-    right: 40px;
-    width: 50px;
-    height: 50px;
+    top:15px;
+    right:40px;
+    width:50px;
+    height:50px;
     cursor: pointer;
     /* url for the hamburger menu img */
     background: url("https://i.imgur.com/8X9Z4Zm.png") no-repeat center center;
     background-size: 30px;
   }
-
-  header.sticky .toggle.active {
+  header.sticky .toggle.active{
     background: url("https://i.imgur.com/8X9Z4Zm.png") no-repeat center center;
     background-size: 30px;
     transform: rotate(180deg);
