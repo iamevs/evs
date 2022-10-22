@@ -3,7 +3,7 @@
   margin: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  cursor: url("https://raw.githubusercontent.com/iamevs/Vijayasenthil-E/main/public/assets/cursor.png?token=GHSAT0AAAAAABYHQN4FBLHCDPLOUZ3WQXKKY2TTKAQ"), auto;
+  cursor: url("https://raw.githubusercontent.com/iamevs/Vijayasenthil-E/main/public/assets/cursor.png?token=GHSAT0AAAAAABYHQN4FBLHCDPLOUZ3WQXKKY2TTKAQ"), auto, pointer;
 }
 
 ::-moz-selection {
@@ -25,7 +25,6 @@ ol {
 
 a {
   text-decoration: none;
-  /* cursor:default; */
 }
 
 img {
