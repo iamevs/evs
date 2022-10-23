@@ -3,8 +3,7 @@
   margin: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  /* cursor: url("https://raw.githubusercontent.com/iamevs/Vijayasenthil-E/main/public/assets/cursor.png?token=GHSAT0AAAAAABYHQN4FBLHCDPLOUZ3WQXKKY2TTKAQ"), auto; */
-  cursor: url(./../cursor.png), auto;
+  cursor: url("https://raw.githubusercontent.com/iamevs/Vijayasenthil-E/main/public/assets/cursor.png?token=GHSAT0AAAAAABYHQN4FBLHCDPLOUZ3WQXKKY2TTKAQ"), auto;
 }
 
 ::-moz-selection {
@@ -403,7 +402,7 @@ header.sticky .grid-layout #home #home-container-text h1 {
 
 #about {
   padding: 96px 48px;
-  background-color: #212529;
+  background-color: #060318;
 }
 
 @media screen and (max-width: 992px) {
