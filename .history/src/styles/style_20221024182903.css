@@ -469,7 +469,7 @@ header.sticky .grid-layout #home #home-container-text h1 {
     flex: 100%;
     justify-content: flex-end;
     width: 186px;
-    height:400px;
+    /* height:400px; */
   }
 } */
 

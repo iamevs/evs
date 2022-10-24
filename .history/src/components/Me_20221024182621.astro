@@ -17,8 +17,10 @@ import Img from "./../../public/assets/evs.webp";
             </div>
             <article id="about-text">
                 <p class="hello-text">
-                    Hello there, I'm EVS
-                    <span id="emoji"> 👋</span>
+                    Hello there, I'm EVS 
+                    <span id="emoji">
+                        👋
+                    </span>
                 </p>
                 <h1 id="about-head">
                     UG Student <span>&#38;</span><br /> FullStack Web Developer
@@ -37,23 +39,23 @@ import Img from "./../../public/assets/evs.webp";
     #about-m {
         padding-top: 50px;
     }
-    #emoji {
+    #emoji{
         font-size: 2.5rem;
-        text-shadow: -10px 10px 15px rgba(0, 0, 0, 0.8);
+        text-shadow:-10px 10px 15px rgba(0, 0, 0, .8);  
     }
-    .hello-text {
+    .hello-text{
         color: #ccc;
         font-size: 1.7rem;
         font-weight: 500;
         margin-bottom: 20px;
-        text-shadow: -10px 10px 15px rgba(0, 0, 0, 0.8);
+        text-shadow: -10px 10px 15px rgba(0, 0, 0, .8);
     }
-    #about-head {
+    #about-head{
         font-size: 4.4rem;
-        color: #3a86ff;
+        color : #3a86ff;
         font-weight: 600;
         margin-bottom: 20px;
-        text-shadow: -10px 10px 15px rgba(0, 0, 0, 0.8);
+        text-shadow: -10px 10px 15px rgba(0, 0, 0, .8);
     }
 
     .text {
@@ -70,26 +72,21 @@ import Img from "./../../public/assets/evs.webp";
         /* cursor: pointer; */
         cursor: grabbing;
     }
-    .about-photo img {
+    .about-photo img{
         border-radius: 50%;
     }
-    #about-text {
+    #about-text{
         width: 50%;
     }
-    @media (max-width: 740px) {
-        #about .grid-layout #about-photo {
-            flex: 100%;
-            justify-content: flex-end;
-            width: 186px;
-            height: 100%;
-            width: 100%;
-            filter: blur(0.5);
+    @media(max-width:740px){
+        #about-photo{
+            display: none;
         }
-        #about-text {
+        #about-text{
             width: 100%;
             z-index: 2;
             position: relative;
-            /* top: -500px; */
+            top: -500px;
         }
     }
 </style>
