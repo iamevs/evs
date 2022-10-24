@@ -32,12 +32,6 @@ import Sphereskill from "./sphereskill.astro";
         padding: 20px;
         /* flex-direction: row; */
     }
-
-    .right{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
     .text{
         line-height: 3.2rem;
         color: #cccccc;
@@ -59,7 +53,7 @@ import Sphereskill from "./sphereskill.astro";
         margin-right: 20px;
         padding: 20px;
     }
-    @media (max-width: 740px) {
+    @media (max-width: 900px) {
         .left,
         .right {
             flex: 100%;
@@ -142,5 +136,10 @@ import Sphereskill from "./sphereskill.astro";
         transform: scale(0.9);
         opacity: 1;
         transition: scale, opacity, 0.5s;
+    }
+    @media(max-width:1200){
+        .skills-container{
+            flex-direction: column;
+        }
     }
 </style>

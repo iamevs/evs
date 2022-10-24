@@ -1,0 +1,78 @@
+---
+import Img from "./../../public/assets/evs.webp";
+---
+
+<section id="about">
+    <div class="grid-layout">
+        <div id="about-m">
+            <div id="about-photo">
+                <img
+                    src={Img}
+                    width="400px"
+                    height="400px"
+                    alt="evs"
+                    class="delayMediumReveal"
+                    id="photo-iuricode"
+                />
+            </div>
+            <article id="about-text">
+                <p class="hello-text">
+                    Hello there, I'm EVS 
+                    <span id="emoji">
+                        👋
+                    </span>
+                </p>
+                <h1 id="about-head">
+                    UG Student <span>&#38;</span><br /> FullStack Web Developer
+                </h1>
+                <p class="text">
+                    I am determined to be cheerful and happy in whatever
+                    situation I may find myself. For I have learned that the
+                    greater part of our misery or unhappiness is deter.
+                </p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<style>
+    #about-m {
+        padding-top: 50px;
+    }
+    #emoji{
+        font-size: 2.5rem;
+        text-shadow:-10px 10px 15px rgba(0, 0, 0, .8);  
+    }
+    .hello-text{
+        color: #ccc;
+        font-size: 1.7rem;
+        font-weight: 500;
+        margin-bottom: 20px;
+        text-shadow: -10px 10px 15px rgba(0, 0, 0, .8);
+    }
+    #about-head{
+        font-size: 4.4rem;
+        color : #3a86ff;
+        font-weight: 600;
+        margin-bottom: 20px;
+        text-shadow: -10px 10px 15px rgba(0, 0, 0, .8);
+    }
+
+    .text {
+        line-height: 3.2rem;
+        color: #cccccc;
+        font-family: "DM Sans";
+        font-size: 1.8rem;
+        /* cursor: pointer; */
+        /* cursor: pointer; */
+    }
+    .text > span {
+        position: relative;
+        display: inline-block;
+        /* cursor: pointer; */
+        cursor: grabbing;
+    }
+    .about-photo img{
+        border-radius: 50%;
+    }
+</style>
