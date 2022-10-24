@@ -47,6 +47,16 @@ import Img from "./../../public/assets/evs.webp";
     #emoji {
         font-size: 4.4rem;
         text-shadow: -10px 10px 15px rgba(0, 0, 0, 0.8);
+        /* zoom in and out */
+        animation: zoom 1s ease-in-out infinite alternate;
+    }
+    @keyframes zoom {
+        from {
+            transform: scale(1);
+        }
+        to {
+            transform: scale(1.2);
+        }
     }
     .hello-text {
         color: #ccc;

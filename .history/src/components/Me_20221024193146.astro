@@ -47,6 +47,19 @@ import Img from "./../../public/assets/evs.webp";
     #emoji {
         font-size: 4.4rem;
         text-shadow: -10px 10px 15px rgba(0, 0, 0, 0.8);
+        /* hi animation */
+        animation: hi 1s ease-in-out infinite;
+    }
+    @keyframes hi {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+        100% {
+            transform: translateY(0);
+        }
     }
     .hello-text {
         color: #ccc;

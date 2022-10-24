@@ -44,9 +44,21 @@ import Img from "./../../public/assets/evs.webp";
     #about-m {
         padding-top: 50px;
     }
+    #about-head span{
+        animation: zoom 1s ease-in-out infinite alternate;
+    }
     #emoji {
         font-size: 4.4rem;
         text-shadow: -10px 10px 15px rgba(0, 0, 0, 0.8);
+        /* zoom in and out */
+    }
+    @keyframes zoom {
+        from {
+            transform: scale(1);
+        }
+        to {
+            transform: scale(1.2);
+        }
     }
     .hello-text {
         color: #ccc;
