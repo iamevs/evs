@@ -75,6 +75,5 @@ document.onclick = hideMenu;
                 menu.style.display = 'block';
                 menu.style.left = e.pageX + "px";
                 menu.style.top = e.pageY + "px";
-                console.log(e.pageX, e.pageY);
             }
         }

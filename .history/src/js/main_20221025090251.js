@@ -57,10 +57,10 @@ document.querySelector('.Sphere').style.color = color;
 document.onclick = hideMenu;
         document.oncontextmenu = rightClick;
   
-        function hideMenu() {
-            document.getElementById(
-                "contextMenu").style.display = "none"
-        }
+        // function hideMenu() {
+        //     document.getElementById(
+        //         "contextMenu").style.display = "none"
+        // }
   
         function rightClick(e) {
             e.preventDefault();
@@ -75,6 +75,5 @@ document.onclick = hideMenu;
                 menu.style.display = 'block';
                 menu.style.left = e.pageX + "px";
                 menu.style.top = e.pageY + "px";
-                console.log(e.pageX, e.pageY);
             }
         }
