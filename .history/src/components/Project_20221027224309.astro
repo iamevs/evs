@@ -45,7 +45,19 @@
         /* backdrop-filter: blur(0px); */
     }
     .card-content:hover{
-        backdrop-filter: blur(25px);
+        animation: blur 0.5s ease-in-out;
+    }
+    @keyframes blur {
+        0%{
+            top:-100%;
+            background:transparent;
+            backdrop-filter: blur(0px);
+        }
+        100%{
+            top:0;
+            background-color: #f1f1f1;
+            backdrop-filter: blur(30px);
+        }
     }
     .a > .card-bg {
         background-image: url(./../../public/assets/codepen.png);
