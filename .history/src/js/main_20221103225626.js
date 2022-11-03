@@ -82,19 +82,34 @@ function rightClick(e) {
 
 //skill section
 
-var a = ['.a', '.b', '.c', '.d']
+var a = ['.a','.b','.c','.d']
 
 
 const down = document.querySelector(a);
 const content = document.querySelector(".skill-dropdown-content");
-
-down.addEventListener("click", () => {
+down.addEventListener("click",() => {
   content.style.display = "block";
   down.classList.add("enable");
 });
-document.addEventListener("click", (e) => {
-  if (e.target !== down && e.target !== content) {
-    content.style.display = "none";
-    down.classList.remove("enable");
+window.onclick = function(event) {
+  if (!event.target.matches('.a')) {
+    var dropdowns = document.getElementsByClassName("skill-dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
   }
-});
+}
+
+
+
+// const close = document.querySelector(".enable");
+// close.addEventListener("click",() => {
+//   down.style.transform = "rotate(90deg)";
+//   content.style.display = "none";
+//   down.classList.remove("enable");
+// });
+

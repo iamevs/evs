@@ -82,19 +82,26 @@ function rightClick(e) {
 
 //skill section
 
-var a = ['.a', '.b', '.c', '.d']
+var a = ['.a','.b','.c','.d']
 
 
 const down = document.querySelector(a);
 const content = document.querySelector(".skill-dropdown-content");
-
-down.addEventListener("click", () => {
+down.addEventListener("click",() => {
   content.style.display = "block";
   down.classList.add("enable");
 });
-document.addEventListener("click", (e) => {
-  if (e.target !== down && e.target !== content) {
-    content.style.display = "none";
-    down.classList.remove("enable");
-  }
+down.addEventListener("click",() => {
+  content.style.display = "none";
+  down.classList.remove("enable");
 });
+
+
+
+// const close = document.querySelector(".enable");
+// close.addEventListener("click",() => {
+//   down.style.transform = "rotate(90deg)";
+//   content.style.display = "none";
+//   down.classList.remove("enable");
+// });
+

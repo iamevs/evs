@@ -87,14 +87,27 @@ var a = ['.a', '.b', '.c', '.d']
 
 const down = document.querySelector(a);
 const content = document.querySelector(".skill-dropdown-content");
-
+const jsopen = document.querySelector(".js");
+const jscontent = document.querySelector(".js-lib");
 down.addEventListener("click", () => {
   content.style.display = "block";
   down.classList.add("enable");
 });
 document.addEventListener("click", (e) => {
-  if (e.target !== down && e.target !== content) {
+  if (e.target !== down && e.target !== content && e.target == jsopen && e.target == jscontent) {
     content.style.display = "none";
     down.classList.remove("enable");
   }
 });
+
+jsopen.addEventListener("mouseover", () => {
+  jscontent.style.display = "block";
+  jsopen.classList.add("enable");
+}
+);
+jsopen.addEventListener("mouseout", () => {
+  jscontent.style.display = "none";
+  jsopen.classList.remove("enable");
+}
+);
+

@@ -82,19 +82,14 @@ function rightClick(e) {
 
 //skill section
 
-var a = ['.a', '.b', '.c', '.d']
+var a = ['.a','.b','.c','.d']
 
 
 const down = document.querySelector(a);
-const content = document.querySelector(".skill-dropdown-content");
-
-down.addEventListener("click", () => {
+const content = document.querySelector(".skill-dropdown-content1");
+down.addEventListener("mouseover", function () {
   content.style.display = "block";
-  down.classList.add("enable");
 });
-document.addEventListener("click", (e) => {
-  if (e.target !== down && e.target !== content) {
-    content.style.display = "none";
-    down.classList.remove("enable");
-  }
+down.addEventListener("mouseout", function () {
+  content.style.display = "none";
 });

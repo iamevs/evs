@@ -82,19 +82,8 @@ function rightClick(e) {
 
 //skill section
 
-var a = ['.a', '.b', '.c', '.d']
-
-
-const down = document.querySelector(a);
+const down = document.getElementById("down");
 const content = document.querySelector(".skill-dropdown-content");
-
-down.addEventListener("click", () => {
+down.addEventListener("mouseover", function () {
   content.style.display = "block";
-  down.classList.add("enable");
-});
-document.addEventListener("click", (e) => {
-  if (e.target !== down && e.target !== content) {
-    content.style.display = "none";
-    down.classList.remove("enable");
-  }
 });

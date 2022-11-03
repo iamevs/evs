@@ -18,56 +18,10 @@ import Sphereskill from "./sphereskill.astro";
                     <div class="skill-dropdown-head">
                         <h1 class="skill-dropdown-head-text">Front-End</h1>
                         <div class="skill-dropdown-head-icon">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="feather feather-chevron-down a"
-                            >
-                                <polyline points="6 9 12 15 18 9"></polyline>
-                            </svg> 
+                            <span class="down a"> ...</span>
                         </div>
                     </div>
-                    <div class="skill-dropdown-content">
-                        <card>
-                            <span class="l-name">HTML</span>
-                            <span class="l-exp">2 years</span>
-                        </card>
-                        <card>
-                            <span class="l-name">CSS</span>
-                            <span class="l-exp">2 years</span>
-                        </card>
-                        <card>
-                            <span class="l-name">JavaScript</span>
-                            <span class="l-exp">2 years</span>
-                        </card>
-                        <card>
-                            <span class="l-name">Js Frameworks and libraries</span>
-                            <span class="l-exp">
-                                <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="feather feather-chevron-down js"
-                            >
-                                <polyline points="6 9 12 15 18 9"></polyline>
-                            </svg>
-                            </span>
-                            <div class="js-lib"></div>
-                        </card>
-                    </div>
+                    <div class="skill-dropdown-content"></div>
                 </div>
                 <div class="skill-dropdown b">
                     <div class="skill-dropdown-head">
@@ -271,40 +225,15 @@ import Sphereskill from "./sphereskill.astro";
         z-index: 0;
     }
     
-    .skill-dropdown-content, .js-lib {
+    .skill-dropdown-content {
         display: none;
         z-index: 999;
         width: 90%;
         height: auto;
-        backdrop-filter: blur(10px);
-        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+        background: #000a14;
         border-radius: 10px;
         padding: 10px;
         margin-top: 10px;
         transform: translateZ(20px);
-    }
-
-    .skill-dropdown-content > card{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        height: 40px;
-        margin-top: 10px;
-        border-radius: 10px;
-        padding: 7px;
-        z-index: -1;
-    }
-    .skill-dropdown-content > card > .l-name,.l-exp {
-        font-size: 1.6rem;
-        font-weight: 600;
-        color: #fff;
-        margin: 5px;
-    }
-    .enable{
-        transform: rotate(180deg);
-    }
-    .js{
-        transform: rotate(-90deg);
     }
 </style>
