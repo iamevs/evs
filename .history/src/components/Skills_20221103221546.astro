@@ -192,7 +192,7 @@ import Sphereskill from "./sphereskill.astro";
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        /* user-select: none; */
+        user-select: none;
     }
     .skill-dropdown {
         width: 100%;
@@ -223,7 +223,10 @@ import Sphereskill from "./sphereskill.astro";
         transform: translateZ(-10px);
         z-index: 0;
     }
-    
+    .skill-dropdown-head-icon > span:hover .skill-dropdown-content {
+        display:block;
+    }
+
     .skill-dropdown-content {
         display: none;
         z-index: 999;

@@ -12,8 +12,8 @@
   },
   "dependencies": {
     "astro": "^1.4.6",
-    "bootstrap": "^5.2.2",
     "jquery": "^3.6.1",
+    "phosphor-react": "^1.4.1",
     "scrollreveal": "^4.0.9",
     "tagcloud": "^1.1.0-1",
     "three": "^0.146.0"

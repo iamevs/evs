@@ -225,7 +225,7 @@ import Sphereskill from "./sphereskill.astro";
     }
     
     .skill-dropdown-content {
-        display: none;
+        /* display: none; */
         z-index: 999;
         width: 90%;
         height: auto;
@@ -234,5 +234,8 @@ import Sphereskill from "./sphereskill.astro";
         padding: 10px;
         margin-top: 10px;
         transform: translateZ(20px);
+    }
+    .skill-dropdown-head-icon#down:hover .skill-dropdown-content {
+        display:none;
     }
 </style>

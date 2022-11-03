@@ -1,13 +1,13 @@
 ---
 import Sphereskill from "./sphereskill.astro";
+import Down from "./../../public/assets/favicon.svg";
 ---
 
 <div class="section-skills" id="skills">
     <div class="skills-container">
+        
         <div class="skills-left left">
-            <h1 id="about-head" class="main-head">
-                Skills <span>&#38;</span> Experience
-            </h1>
+            <h1 id="about-head" class="main-head">Skills <span>&#38;</span> Experience</h1>
             <p class="text">
                 More than a year of programming experience. I was drawn to full
                 stack development and am now working in it after learning a lot
@@ -16,39 +16,14 @@ import Sphereskill from "./sphereskill.astro";
             <div class="skill-chart-container">
                 <div class="skill-dropdown a">
                     <div class="skill-dropdown-head">
-                        <h1 class="skill-dropdown-head-text">Front-End</h1>
+                        <h1 class="skill-dropdown-head-text">Front End</h1>
                         <div class="skill-dropdown-head-icon">
-                            <span id="down"> ...</span>
-                        </div>
-                    </div>
-                    <div class="skill-dropdown-content"></div>
-                </div>
-                <div class="skill-dropdown b">
-                    <div class="skill-dropdown-head">
-                        <h1 class="skill-dropdown-head-text">Back-end</h1>
-                        <div class="skill-dropdown-head-icon">
-                            <span id="down"> ...</span>
+                            <img src={Down}/>
                         </div>
                     </div>
                 </div>
-                <div class="skill-dropdown c">
-                    <div class="skill-dropdown-head">
-                        <h1 class="skill-dropdown-head-text">
-                            Programming Languages
-                        </h1>
-                        <div class="skill-dropdown-head-icon">
-                            <span id="down"> ...</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-dropdown d">
-                    <div class="skill-dropdown-head">
-                        <h1 class="skill-dropdown-head-text">Others</h1>
-                        <div class="skill-dropdown-head-icon">
-                            <span id="down"> ...</span>
-                        </div>
-                    </div>
-                </div>
+                <div class="skill-dropdown b"></div>
+                <div class="skill-dropdown c"></div>
             </div>
         </div>
         <div class="skills-right right">
@@ -72,12 +47,12 @@ import Sphereskill from "./sphereskill.astro";
         /* flex-direction: row; */
     }
 
-    .right {
+    .right{
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .text {
+    .text{
         line-height: 3.2rem;
         color: #cccccc;
         font-family: "DM Sans";
@@ -108,7 +83,7 @@ import Sphereskill from "./sphereskill.astro";
         .left {
             margin-bottom: 20px;
         }
-        .skills-container {
+        .skills-container{
             flex-direction: column-reverse;
         }
     }
@@ -187,52 +162,16 @@ import Sphereskill from "./sphereskill.astro";
         transition: scale, opacity, 0.5s;
     }
 
-    .skill-chart-container {
+    .skill-chart-container{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        /* user-select: none; */
     }
-    .skill-dropdown {
-        width: 100%;
-        height: 40px;
+    .skill-dropdown{
+        width:100%;
+        height:40px;
+        background: #3a86ff;
         margin-top: 10px;
-        border-radius: 10px;
-    }
-    .skill-dropdown-head {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-radius: 10px;
-        padding: 7px;
-        z-index: -1;
-    }
-    .skill-dropdown-head-text {
-        font-size: 1.8rem;
-        font-weight: 600;
-        color: #fff;
-    }
-    .skill-dropdown-head-icon {
-        font-size: 1.8rem;
-        font-weight: 600;
-        color: #fff;
-        /* padding-top: 5px; */
-        position: relative;
-        top: -2px;
-        transform: translateZ(-10px);
-        z-index: 0;
-    }
-    
-    .skill-dropdown-content {
-        display: none;
-        z-index: 999;
-        width: 90%;
-        height: auto;
-        background: #000a14;
-        border-radius: 10px;
-        padding: 10px;
-        margin-top: 10px;
-        transform: translateZ(20px);
     }
 </style>
