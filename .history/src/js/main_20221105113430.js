@@ -87,7 +87,7 @@ function down(x, y) {
       x.classList.add("enable");
     });
     document.addEventListener("click", (e) => {
-      if (e.target !== x && e.target !== y) {
+      if (e.target !== x && e.target !== y || e.target == y.children[0]) {
         y.style.display = "none";
         x.classList.remove("enable");
       }
@@ -103,12 +103,13 @@ jsdown.addEventListener("mouseover", function () {
   jscontent.style.display = "block";
   jsdown.classList.add("enable");
 });
-document.addEventListener("click", (e) => {
-  if (e.target !== jsdown && e.target !== jscontent) {
+jsdown.addEventListener("click", function (e) {
+  if(e.target !== jscontent){
     jscontent.style.display = "none";
     jsdown.classList.remove("enable");
   }
 });
+
 
 const bdown = document.querySelector('.b');
 const bcontent = document.querySelector(".b1");

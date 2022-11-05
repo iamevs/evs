@@ -81,17 +81,32 @@ function rightClick(e) {
 
 
 //skill section
+var multiDD = new Array();
+multiDD[0] = new Array(".a", ".a1");
+multiDD[1] = new Array(".b", ".b1");
+multiDD[2] = new Array(".c", ".c1");  
+multiDD[3] = new Array(".d", ".d1");
+
+function checkMultiDD(x,y) {
+  for (var i = 0; i < multiDD.length; i++) {
+    if (multiDD[i][0] == x && multiDD[i][1] == y) {
+      return true;
+    }
+  }
+  return false;
+}
+
 function down(x, y) {
-    x.addEventListener("click", function () {
-      y.style.display = "block";
-      x.classList.add("enable");
-    });
-    document.addEventListener("click", (e) => {
-      if (e.target !== x && e.target !== y) {
-        y.style.display = "none";
-        x.classList.remove("enable");
-      }
-    });
+  x.addEventListener("mouseover", function () {
+    y.style.display = "block";
+    x.classList.add("enable");
+  });
+  document.addEventListener("click", (e) => {
+    if (e.target !== x && e.target !== y) {
+      y.style.display = "none";
+      x.classList.remove("enable");
+    }
+  });
 }
 // active one at a time
 const adown = document.querySelector('.a');
@@ -99,17 +114,7 @@ const content = document.querySelector(".a1");
 down(adown, content);
 const jsdown = document.querySelector('.js');
 const jscontent = document.querySelector(".js-lib");
-jsdown.addEventListener("mouseover", function () {
-  jscontent.style.display = "block";
-  jsdown.classList.add("enable");
-});
-document.addEventListener("click", (e) => {
-  if (e.target !== jsdown && e.target !== jscontent) {
-    jscontent.style.display = "none";
-    jsdown.classList.remove("enable");
-  }
-});
-
+down(jsdown, jscontent);
 const bdown = document.querySelector('.b');
 const bcontent = document.querySelector(".b1");
 down(bdown, bcontent);

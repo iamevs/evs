@@ -81,35 +81,40 @@ function rightClick(e) {
 
 
 //skill section
-function down(x, y) {
-    x.addEventListener("click", function () {
-      y.style.display = "block";
-      x.classList.add("enable");
-    });
-    document.addEventListener("click", (e) => {
-      if (e.target !== x && e.target !== y) {
-        y.style.display = "none";
-        x.classList.remove("enable");
-      }
-    });
+let A = ['.a','.b','.c','.d']
+function notenable(){
+  for(let i = 0; i < A.length; i++){
+    console.log(document.querySelector(A[i]));
+    if(document.querySelector(A[i]).classList.contains('enable')){
+      // const con = A[i]+'1';
+      // console.log(A[i]);
+      // console.log(con);
+      // con.style.display = 'none';
+      // document.querySelector(A[i]).classList.remove('enable');
+
+    }
+  }
 }
-// active one at a time
+function down(x, y) {
+  notenable();
+  x.addEventListener("mouseover", function () {
+    y.style.display = "block";
+    x.classList.add("enable");
+  });
+  document.addEventListener("click", (e) => {
+    if (e.target !== x && e.target !== y) {
+      y.style.display = "none";
+      x.classList.remove("enable");
+    }
+  });
+}
+
 const adown = document.querySelector('.a');
 const content = document.querySelector(".a1");
 down(adown, content);
 const jsdown = document.querySelector('.js');
 const jscontent = document.querySelector(".js-lib");
-jsdown.addEventListener("mouseover", function () {
-  jscontent.style.display = "block";
-  jsdown.classList.add("enable");
-});
-document.addEventListener("click", (e) => {
-  if (e.target !== jsdown && e.target !== jscontent) {
-    jscontent.style.display = "none";
-    jsdown.classList.remove("enable");
-  }
-});
-
+down(jsdown, jscontent);
 const bdown = document.querySelector('.b');
 const bcontent = document.querySelector(".b1");
 down(bdown, bcontent);

@@ -99,17 +99,7 @@ const content = document.querySelector(".a1");
 down(adown, content);
 const jsdown = document.querySelector('.js');
 const jscontent = document.querySelector(".js-lib");
-jsdown.addEventListener("mouseover", function () {
-  jscontent.style.display = "block";
-  jsdown.classList.add("enable");
-});
-document.addEventListener("click", (e) => {
-  if (e.target !== jsdown && e.target !== jscontent) {
-    jscontent.style.display = "none";
-    jsdown.classList.remove("enable");
-  }
-});
-
+down(jsdown, jscontent);
 const bdown = document.querySelector('.b');
 const bcontent = document.querySelector(".b1");
 down(bdown, bcontent);
