@@ -65,28 +65,7 @@ import Sphereskill from "./sphereskill.astro";
                                 <polyline points="6 9 12 15 18 9"></polyline>
                             </svg>
                             </span>
-                            <div class="js-lib">
-                                <card>
-                                    <span class="l-name">React</span>
-                                    <span class="l-exp">2 years</span>
-                                </card>
-                                <card>
-                                    <span class="l-name">Vue</span>
-                                    <span class="l-exp">2 years</span>
-                                </card>
-                                <card>
-                                    <span class="l-name">Angular</span>
-                                    <span class="l-exp">2 years</span>
-                                </card>
-                                <card>
-                                    <span class="l-name">Svelte</span>
-                                    <span class="l-exp">2 years</span>
-                                </card>
-                                <card>
-                                    <span class="l-name">jQuery</span>
-                                    <span class="l-exp">2 years</span>
-                                </card>
-                            </div>
+                            <div class="js-lib"></div>
                         </card>
                     </div>
                 </div>
@@ -305,12 +284,12 @@ import Sphereskill from "./sphereskill.astro";
         transform: translateZ(20px);
     }
     .js-lib{
-        backdrop-filter: blur(10px);
-        background-color: #212529;
         position:relative;
-        top: -100%;
+        top: -5px;
+        left:0px;
     }
-    .skill-dropdown-content > card, .js-lib > card {
+
+    .skill-dropdown-content > card{
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -321,7 +300,7 @@ import Sphereskill from "./sphereskill.astro";
         padding: 7px;
         z-index: -1;
     }
-    card > .l-name,.l-exp {
+    .skill-dropdown-content > card > .l-name,.l-exp {
         font-size: 1.6rem;
         font-weight: 600;
         color: #fff;

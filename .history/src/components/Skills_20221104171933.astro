@@ -304,12 +304,7 @@ import Sphereskill from "./sphereskill.astro";
         margin-top: 10px;
         transform: translateZ(20px);
     }
-    .js-lib{
-        backdrop-filter: blur(10px);
-        background-color: #212529;
-        position:relative;
-        top: -100%;
-    }
+
     .skill-dropdown-content > card, .js-lib > card {
         display: flex;
         justify-content: space-between;
@@ -320,6 +315,9 @@ import Sphereskill from "./sphereskill.astro";
         border-radius: 10px;
         padding: 7px;
         z-index: -1;
+    }
+    .js-lib > card{
+        z-index: 999;
     }
     card > .l-name,.l-exp {
         font-size: 1.6rem;
