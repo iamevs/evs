@@ -141,91 +141,16 @@ import Sphereskill from "./sphereskill.astro";
                             Programming Languages
                         </h1>
                         <div class="skill-dropdown-head-icon">
-                            <span class="down">
-                                    <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    class="feather feather-chevron-down c"
-                                >
-                                    <polyline points="6 9 12 15 18 9"></polyline>
-                                </svg>
-                            </span>
+                            <span class="down c"> ...</span>
                         </div>
-                    </div>
-                    <div class="skill-dropdown-content c1">
-                        <card>
-                            <span class="l-name">C</span>
-                            <span class="l-exp">20+projects</span>
-                        </card>
-                        <card>
-                            <span class="l-name">C++</span>
-                            <span class="l-exp">20+projects</span>
-                        </card>
-                        <card>
-                            <span class="l-name">Java</span>
-                            <span class="l-exp">20+projects</span>
-                        </card>
-                        <card>
-                            <span class="l-name">Python</span>
-                            <span class="l-exp">20+projects</span>
-                        </card>
-                        <card>
-                            <span class="l-name">JavaScript</span>
-                            <span class="l-exp">20+projects</span>
-                        </card>
-                        <card>
-                            <span class="l-name">Rust</span>
-                            <span class="l-exp">20+projects</span>
-                        </card>
                     </div>
                 </div>
                 <div class="skill-dropdown">
                     <div class="skill-dropdown-head">
                         <h1 class="skill-dropdown-head-text">Others</h1>
                         <div class="skill-dropdown-head-icon">
-                            <span class="down">
-                                    <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    class="feather feather-chevron-down d"
-                                >
-                                    <polyline points="6 9 12 15 18 9"></polyline>
-                                </svg>
-                            </span>
+                            <span class="down d"> ...</span>
                         </div>
-                    </div>
-                    <div class="skill-dropdown-content d1">
-                        <card>
-                            <span class="l-name">Git</span>
-                            <span class="l-exp">20+projects</span>
-                        </card>
-                        <card>
-                            <span class="l-name">Github</span>
-                            <span class="l-exp">20+projects</span>
-                        </card>
-                        <card>
-                            <span class="l-name">Linux</span>
-                            <span class="l-exp">20+projects</span>
-                        </card>
-                        <card>
-                            <span class="l-name">Docker</span>
-                            <span class="l-exp">20+projects</span>
-                        </card>
-                        
                     </div>
                 </div>
             </div>
@@ -237,12 +162,9 @@ import Sphereskill from "./sphereskill.astro";
 </div>
 
 <style>
-    .b1,.c1,.d1{
+    .b1{
         position: relative;
-        bottom:70px;
-    }
-    .d1{
-        bottom: 140px;
+        bottom:100px;
     }
     .section-skills {
         background: #212529;
@@ -427,6 +349,12 @@ import Sphereskill from "./sphereskill.astro";
         background-color: #212529;
         position:relative;
         top: -100%;
+    }
+
+    @media(max-width: 740px){
+        .js-lib{
+            display: contents;
+        }
     }
     .skill-dropdown-content > card, .js-lib > card {
         display: flex;

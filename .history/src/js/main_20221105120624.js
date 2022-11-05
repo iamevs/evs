@@ -87,7 +87,7 @@ function down(x, y) {
       x.classList.add("enable");
     });
     document.addEventListener("click", (e) => {
-      if (e.target !== x && e.target !== y) {
+      if (e.target !== x && e.target !== y && e.target !== jsdown) {
         y.style.display = "none";
         x.classList.remove("enable");
       }
@@ -104,17 +104,12 @@ jsdown.addEventListener("mouseover", function () {
   jsdown.classList.add("enable");
 });
 document.addEventListener("click", (e) => {
-  if (e.target !== jsdown) {
+  if (e.target !== jsdown && e.target !== jscontent) {
     jscontent.style.display = "none";
     jsdown.classList.remove("enable");
   }
 });
+
 const bdown = document.querySelector('.b');
 const bcontent = document.querySelector(".b1");
 down(bdown, bcontent);
-const cdown = document.querySelector('.c');
-const ccontent = document.querySelector(".c1");
-down(cdown, ccontent);
-const ddown = document.querySelector('.d');
-const dcontent = document.querySelector(".d1");
-down(ddown, dcontent);

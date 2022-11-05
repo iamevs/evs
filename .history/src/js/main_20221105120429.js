@@ -109,12 +109,7 @@ document.addEventListener("click", (e) => {
     jsdown.classList.remove("enable");
   }
 });
+
 const bdown = document.querySelector('.b');
 const bcontent = document.querySelector(".b1");
 down(bdown, bcontent);
-const cdown = document.querySelector('.c');
-const ccontent = document.querySelector(".c1");
-down(cdown, ccontent);
-const ddown = document.querySelector('.d');
-const dcontent = document.querySelector(".d1");
-down(ddown, dcontent);
