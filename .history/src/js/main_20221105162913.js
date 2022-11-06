@@ -37,7 +37,7 @@ let filename = [
   'Bootstrap', 'Tailwind', 'REACT',
   'PYTHON', 'SASS',
   'C/C++', 'NODEJS', 'MONGODB',
-  'EXPRESS', 'MYSQL', 'JQUERY', 'JAVA', 'Svelte', 'Astro', 'Next js', 'Three js', 'D3 js', 'PHP', 'NPM','🖤'
+  'EXPRESS', 'MYSQL', 'JQUERY', 'JAVA', 'Svelte', 'Astro', 'Next js', 'Three js', 'D3 js', 'PHP', 'NPM'
 ];
 
 var tagCloud = TagCloud('.Sphere', filename, {
@@ -93,24 +93,21 @@ function down(x, y) {
       }
     });
 } 
-function innerdown(x,y) {
-  x.addEventListener("mouseover", function () {
-    y.style.display = "block";
-    x.classList.add("enable");
-  });
-  document.addEventListener("click", (e) => {
-    if (e.target !== x && e.target !== y) {
-      y.style.display = "none";
-      x.classList.remove("enable");
-    }
-  });
-}
 const adown = document.querySelector('.a');
 const content = document.querySelector(".a1");
 down(adown, content);
 const jsdown = document.querySelector('.js');
 const jscontent = document.querySelector(".js-lib");
-innerdown(jsdown,jscontent);
+jsdown.addEventListener("mouseover", function () {
+  jscontent.style.display = "block";
+  jsdown.classList.add("enable");
+});
+document.addEventListener("click", (e) => {
+  if (e.target !== jsdown) {
+    jscontent.style.display = "none";
+    jsdown.classList.remove("enable");
+  }
+});
 const bdown = document.querySelector('.b');
 const bcontent = document.querySelector(".b1");
 down(bdown, bcontent);
@@ -120,6 +117,6 @@ down(cdown, ccontent);
 const ddown = document.querySelector('.d');
 const dcontent = document.querySelector(".d1");
 down(ddown, dcontent);
-const dvdown = document.querySelector('.d-v');
+const dvdown = document.querySelector('.dv');
 const dvcontent = document.querySelector(".d-v-content");
-innerdown(dvdown,dvcontent);
+down(dvdown, dvcontent);

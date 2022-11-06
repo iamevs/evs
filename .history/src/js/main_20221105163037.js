@@ -37,7 +37,7 @@ let filename = [
   'Bootstrap', 'Tailwind', 'REACT',
   'PYTHON', 'SASS',
   'C/C++', 'NODEJS', 'MONGODB',
-  'EXPRESS', 'MYSQL', 'JQUERY', 'JAVA', 'Svelte', 'Astro', 'Next js', 'Three js', 'D3 js', 'PHP', 'NPM','🖤'
+  'EXPRESS', 'MYSQL', 'JQUERY', 'JAVA', 'Svelte', 'Astro', 'Next js', 'Three js', 'D3 js', 'PHP', 'NPM'
 ];
 
 var tagCloud = TagCloud('.Sphere', filename, {
@@ -110,6 +110,16 @@ const content = document.querySelector(".a1");
 down(adown, content);
 const jsdown = document.querySelector('.js');
 const jscontent = document.querySelector(".js-lib");
+// jsdown.addEventListener("mouseover", function () {
+//   jscontent.style.display = "block";
+//   jsdown.classList.add("enable");
+// });
+// document.addEventListener("click", (e) => {
+//   if (e.target !== jsdown) {
+//     jscontent.style.display = "none";
+//     jsdown.classList.remove("enable");
+//   }
+// });
 innerdown(jsdown,jscontent);
 const bdown = document.querySelector('.b');
 const bcontent = document.querySelector(".b1");

@@ -37,7 +37,7 @@ let filename = [
   'Bootstrap', 'Tailwind', 'REACT',
   'PYTHON', 'SASS',
   'C/C++', 'NODEJS', 'MONGODB',
-  'EXPRESS', 'MYSQL', 'JQUERY', 'JAVA', 'Svelte', 'Astro', 'Next js', 'Three js', 'D3 js', 'PHP', 'NPM','🖤'
+  'EXPRESS', 'MYSQL', 'JQUERY', 'JAVA', 'Svelte', 'Astro', 'Next js', 'Three js', 'D3 js', 'PHP', 'NPM'
 ];
 
 var tagCloud = TagCloud('.Sphere', filename, {
