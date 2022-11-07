@@ -59,8 +59,8 @@ input:focus {
 }
 
 body {
-  font-family: "IBM Plex Sans";
-  /* font-family: 'Indie Flower', cursive; */
+  /* font-family: "IBM Plex Sans"; */
+  font-family: 'Indie Flower', cursive;
   background-color: #212529 !important;
 }
 
