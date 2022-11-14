@@ -704,7 +704,7 @@ rect.ContributionCalendar-day[data-level='4'] {
 }
 
 .calendar {
-  font-family: IBM Plex Sans;
+  /* font-family: Helvetica, arial; */
   /* border: 1px solid #DDDDDD; */
   border-radius: 3px;
   min-height: 243px;
@@ -787,7 +787,7 @@ rect.ContributionCalendar-day[data-level='4'] {
 .monospace {
   text-align: center;
   color: #000;
-  font-family: IBM Plex Mono;
+  font-family: monospace;
 }
 
 .monospace a {

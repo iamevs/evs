@@ -3,8 +3,7 @@ import GitHubCalendar from "github-calendar";
 ---
 
 <div class="calender-container">
-  <div class="head-container"><h2 id="head"> Days I code 🍵</h2></div>
- 
+ <h2 id="head"> Days I code</h2>
 <div class="Github-calender">
   <div class="calendar"></div>
 </div>
@@ -13,14 +12,7 @@ import GitHubCalendar from "github-calendar";
 <style>
   .calendar-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    /* margin: 0 auto; */
-    width: 100%;
-    height: 100%;
-  }
-  .head-container {
-    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
@@ -44,11 +36,7 @@ import GitHubCalendar from "github-calendar";
   .calendar {
     padding: 30px;
     width: 80%;
-    color: #fff;
+    color: #ccc;
     height: 100%;
-    /* font-size: 0.5rem; */
-    font-weight: 600;
-    font-style: bold;
-    letter-spacing: 1px;
   }
 </style>
