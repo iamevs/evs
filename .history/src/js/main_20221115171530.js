@@ -126,11 +126,15 @@ innerdown(dvdown, dvcontent);
 
 // github calendar
 
-const container = document.querySelector(".calendar");
 
-GitHubCalendar(container, "iamevs");
 
-GitHubCalendar(container, "iamevs", { responsive: true });
+
+
+if(window.innerWidth < 768 ){
+  var svg = document.querySelector(".js-calendar-graph-svg");
+  svg.setAttribute("height", "200");
+  svg.setAttribute("viewBox", "555 0 288 168");
+}
 
 //projects
 

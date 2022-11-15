@@ -130,7 +130,7 @@ const container = document.querySelector(".calendar");
 
 GitHubCalendar(container, "iamevs");
 
-GitHubCalendar(container, "iamevs", { responsive: true });
+// GitHubCalendar(container, "iamevs", { responsive: true });
 
 //projects
 

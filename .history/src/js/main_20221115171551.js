@@ -126,11 +126,7 @@ innerdown(dvdown, dvcontent);
 
 // github calendar
 
-const container = document.querySelector(".calendar");
 
-GitHubCalendar(container, "iamevs");
-
-GitHubCalendar(container, "iamevs", { responsive: true });
 
 //projects
 

@@ -132,5 +132,10 @@ GitHubCalendar(container, "iamevs");
 
 GitHubCalendar(container, "iamevs", { responsive: true });
 
+if(window.innerWidth < 768){
+  var svg = cal.querySelector(".js-calendar-graph-svg");
+  svg.setAttribute("height", "200");
+}
+
 //projects
 
