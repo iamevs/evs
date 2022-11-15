@@ -772,8 +772,9 @@ rect.ContributionCalendar-day[data-level='4'] {
 }
 
 .contrib-number {
-  /* font-weight: 300; */
+  font-weight: 300;
   line-height: 1.3em;
+  font-size: 24px;
   display: block;
   /* color: #0078ff; */
   font-size: 2.2rem;
