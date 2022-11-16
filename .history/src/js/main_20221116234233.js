@@ -16,6 +16,10 @@ const element = document.querySelectorAll("span");
 for (let i = 0; i < element.length; i++) {
   if (element[i].children.length == 0) {
     element[i].addEventListener("mouseover", function () {
+      // add classlist except for the first e
+      if (element[i]== 'e') {
+        element[i].classList.add("active");
+      }
       this.classList.add("active-text");
     });
   }

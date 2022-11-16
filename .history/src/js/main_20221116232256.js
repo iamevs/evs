@@ -5,16 +5,12 @@ menu();
 // about-text animation
 
 const text = document.querySelector(".text");
-// replace span to .text except the id static
 text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
-const eavbsi = document.querySelector("#static");
-console.log(eavbsi);
-
 
 const element = document.querySelectorAll("span");
-
 for (let i = 0; i < element.length; i++) {
-  if (element[i].children.length == 0) {
+  // if the element has a span tag with id static don't animate it
+  if (element[i].id == "static") {
     element[i].addEventListener("mouseover", function () {
       this.classList.add("active-text");
     });

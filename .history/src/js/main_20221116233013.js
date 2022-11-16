@@ -5,20 +5,23 @@ menu();
 // about-text animation
 
 const text = document.querySelector(".text");
-// replace span to .text except the id static
 text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
-const eavbsi = document.querySelector("#static");
-console.log(eavbsi);
+const a =[];
+
+const b = ['eee','aaa','vvv','bbb','sss','iii'];
+
+for(let i=0;i<b.length;i++){
+  let temp =i;
+  temp = document.getElementById(b[i]);
+  a.push(temp);
+}
 
 
 const element = document.querySelectorAll("span");
-
 for (let i = 0; i < element.length; i++) {
-  if (element[i].children.length == 0) {
     element[i].addEventListener("mouseover", function () {
       this.classList.add("active-text");
     });
-  }
 }
 
 
