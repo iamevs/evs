@@ -53,8 +53,6 @@ var tagCloud = TagCloud('.Sphere', filename, {
 var color = '#3a86ff';
 document.querySelector('.Sphere').style.color = color;
 
-// custom context menu
-
 
 document.onclick = hideMenu;
 document.oncontextmenu = rightClick;
@@ -63,8 +61,6 @@ function hideMenu() {
   document.getElementById(
     "contextMenu").style.display = "none"
 }
-
-hideMenu();
 
 function rightClick(e) {
   e.preventDefault();

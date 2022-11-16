@@ -53,8 +53,6 @@ var tagCloud = TagCloud('.Sphere', filename, {
 var color = '#3a86ff';
 document.querySelector('.Sphere').style.color = color;
 
-// custom context menu
-
 
 document.onclick = hideMenu;
 document.oncontextmenu = rightClick;
@@ -63,8 +61,6 @@ function hideMenu() {
   document.getElementById(
     "contextMenu").style.display = "none"
 }
-
-hideMenu();
 
 function rightClick(e) {
   e.preventDefault();
@@ -79,7 +75,7 @@ function rightClick(e) {
     menu.style.display = 'block';
     menu.style.left = e.pageX + "px";
     menu.style.top = e.pageY + "px";
-    // console.log(e.pageX, e.pageY);
+    console.log(e.pageX, e.pageY);
   }
 }
 
@@ -130,13 +126,11 @@ innerdown(dvdown, dvcontent);
 
 // github calendar
 
-const container = document.querySelector(".calendar");
+// const container = document.querySelector(".calendar");
 
-GitHubCalendar(container, "iamevs");
+// GitHubCalendar(container, "iamevs");
 
-if (window.innerWidth < 768) {
-  GitHubCalendar(container, "iamevs", { responsive: true });
-}
+// GitHubCalendar(container, "iamevs", { responsive: true });
 
 //projects
 
