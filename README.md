@@ -1,11 +1,1 @@
-# iamevs.github.io
-
-
-## Daily update
-
-- Date   : 10/10/2022
-- Task   : Head and About section
-- Status : completed
-# todo 
-
-- skills 
+# under construction 🏗️🚧
