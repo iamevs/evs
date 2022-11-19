@@ -239,8 +239,8 @@ class Slider {
       return;
     }
     
-    const maxX = 0;
-    const maxY = 0;
+    const maxX = 2;
+    const maxY = 2;
     
     const newPos = lerp({
       x: this.lastX,

@@ -239,8 +239,8 @@ class Slider {
       return;
     }
     
-    const maxX = 0;
-    const maxY = 0;
+    const maxX = 5;
+    const maxY = 5;
     
     const newPos = lerp({
       x: this.lastX,
@@ -423,13 +423,13 @@ class Slider {
       }
     }
 
-    // const bgClass = 'slider--bg-next';
+    const bgClass = 'slider--bg-next';
     const el = this.el;
     const imageUrl = `url(${this.images[+nextId - 1].src})`;
     
     el.style.setProperty('--img-next', imageUrl);
     el.addEventListener('transitionend', onBackgroundTransitionEnd);
-    // el.classList.add(bgClass);
+    el.classList.add(bgClass);
   }
 }
 

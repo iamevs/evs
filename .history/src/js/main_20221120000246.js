@@ -160,7 +160,7 @@ function lerp({ x, y }, { x: targetX, y: targetY }) {
 
 class Slider {
   constructor (el) {
-    const imgClass = this.IMG_CLASS = 'slider__images-item';
+    // const imgClass = this.IMG_CLASS = 'slider__images-item';
     const textClass = this.TEXT_CLASS = 'slider__text-item';
     const activeImgClass = this.ACTIVE_IMG_CLASS = `${imgClass}--active`;
     const activeTextClass = this.ACTIVE_TEXT_CLASS =  `${textClass}--active`;
@@ -239,8 +239,8 @@ class Slider {
       return;
     }
     
-    const maxX = 0;
-    const maxY = 0;
+    const maxX = 2;
+    const maxY = 2;
     
     const newPos = lerp({
       x: this.lastX,
@@ -423,13 +423,13 @@ class Slider {
       }
     }
 
-    // const bgClass = 'slider--bg-next';
+    const bgClass = 'slider--bg-next';
     const el = this.el;
     const imageUrl = `url(${this.images[+nextId - 1].src})`;
     
     el.style.setProperty('--img-next', imageUrl);
     el.addEventListener('transitionend', onBackgroundTransitionEnd);
-    // el.classList.add(bgClass);
+    el.classList.add(bgClass);
   }
 }
 

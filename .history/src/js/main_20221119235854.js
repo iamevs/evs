@@ -239,8 +239,8 @@ class Slider {
       return;
     }
     
-    const maxX = 0;
-    const maxY = 0;
+    const maxX = 10;
+    const maxY = 10;
     
     const newPos = lerp({
       x: this.lastX,
@@ -423,15 +423,39 @@ class Slider {
       }
     }
 
-    // const bgClass = 'slider--bg-next';
+    const bgClass = 'slider--bg-next';
     const el = this.el;
     const imageUrl = `url(${this.images[+nextId - 1].src})`;
     
     el.style.setProperty('--img-next', imageUrl);
     el.addEventListener('transitionend', onBackgroundTransitionEnd);
-    // el.classList.add(bgClass);
+    el.classList.add(bgClass);
   }
 }
 
 const sliderEl = document.getElementById('slider');
 const slider = new Slider(sliderEl);
+
+// ------------------ Demo stuff ------------------------ //
+
+let timer = 0;
+
+function autoSlide () {
+  requestAnimationFrame(() => {
+    slider.next();
+  });
+  
+  timer = setTimeout(autoSlide, 5000);
+}
+
+function stopAutoSlide () {
+  clearTimeout(timer);
+  
+  this.removeEventListener('touchstart', stopAutoSlide);
+  this.removeEventListener('mousemove', stopAutoSlide);  
+}
+
+sliderEl.addEventListener('mousemove', stopAutoSlide);
+sliderEl.addEventListener('touchstart', stopAutoSlide);
+
+timer = setTimeout(autoSlide, 2000);

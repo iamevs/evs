@@ -13,6 +13,7 @@
   "dependencies": {
     "astro": "^1.4.6",
     "github-calendar": "^2.3.1",
+    "jQuery": "^1.7.4",
     "jquery": "^3.6.1",
     "phosphor-react": "^1.4.1",
     "react-bootstrap": "^2.6.0",
