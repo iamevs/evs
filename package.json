@@ -11,12 +11,16 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/react": "^1.2.2",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
     "astro": "^1.4.6",
     "github-calendar": "^2.3.1",
     "jquery": "^3.6.1",
     "phosphor-react": "^1.4.1",
+    "react": "^18.0.0",
     "react-bootstrap": "^2.6.0",
-    "react-dom": "^18.2.0",
+    "react-dom": "^18.0.0",
     "react-github-calendar": "^3.3.4",
     "sass": "^1.56.0",
     "scrollreveal": "^4.0.9",
