@@ -1,13 +1,13 @@
 ---
 // import GitHubCalendar from "github-calendar";
 import Coffee from "./../assets/coffee.png";
-// import Calender from "./Calender.html";
+import Calender from "./Calender.html";
 // import GitHubCalendar from "react-github-calendar";
 ---
 
 <div class="calender-container">
   <div class="head-container">
-    <h2 id="head">My Coding Routine</h2>
+    <h2 id="head">Days I code</h2>
     <img src={Coffee} alt="coffee" />
   </div>
 
@@ -17,13 +17,22 @@ import Coffee from "./../assets/coffee.png";
 
   <div class="Github-calender">
     <!-- <div id="calender" class="calendar"></div> -->
-    <iframe src="Calender.html" frameborder="0" width="100%" height="400px"
-    ></iframe>
-    <!-- <Calender /> -->
+    <!-- <GitHubCalendar username="iamevs" /> -->
+    <!-- <GitHub /> -->
+    <!-- <img src="https://contribution.catsjuice.com/_/iamevs?chart=3dbar&gap=0.6&scale=2&gradient=true&flatten=0&animation=fadeIn&weeks=30&theme=blue&widget_size=large&dark=true"/> -->
+    <!-- <iframe
+      src="https://contribution.catsjuice.com/_/iamevs?chart=3dbar&gap=0.6&scale=2&gradient=true&flatten=0&animation=fadeIn&weeks=30&theme=blue&widget_size=large&dark=true"
+      height="500px"
+      width="100%"
+      style="border: 0; background-color: #212529 !important;"
+      ></iframe> -->
+      <!-- import calender-->
+      <Calender />
   </div>
 </div>
 
 <style>
+  
   .calendar-container {
     display: flex;
     align-items: center;
