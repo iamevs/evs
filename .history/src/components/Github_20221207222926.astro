@@ -1,8 +1,8 @@
 ---
 // import GitHubCalendar from "github-calendar";
 import Coffee from "./../assets/coffee.png";
-import Git from './Github.html';
-// import GitHubCalendar from "react-github-calendar";
+// import GitHub from './Github.jsx';
+import GitHubCalendar from "react-github-calendar";
 ---
 
 <div class="calender-container">
@@ -20,8 +20,8 @@ import Git from './Github.html';
     <!-- <GitHubCalendar username="iamevs" /> -->
     <!-- <GitHub /> -->
     <!-- <img src="https://contribution.catsjuice.com/_/iamevs?chart=3dbar&gap=0.6&scale=2&gradient=true&flatten=0&animation=fadeIn&weeks=30&theme=blue&widget_size=large&dark=true"/> -->
-    <iframe class="calendar"
-      src= ""
+    <iframe
+      src="https://contribution.catsjuice.com/_/iamevs?chart=3dbar&gap=0.6&scale=2&gradient=true&flatten=0&animation=fadeIn&animation_reverse=true&format=html&weeks=30&theme=blue&widget_size=large&dark=true"
       frameborder="0"
       height="400px"
       width="100%"></iframe>
@@ -29,11 +29,7 @@ import Git from './Github.html';
 </div>
 
 <style>
-  
-.calendar > body{
-  background-color: #212529 !important;
-}  
-.calendar-container {
+  .calendar-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -69,5 +65,15 @@ import Git from './Github.html';
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .calendar {
+    padding: 30px;
+    width: 80%;
+    color: #fff;
+    height: 100%;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-style: bold;
+    letter-spacing: 0.5px;
   }
 </style>
