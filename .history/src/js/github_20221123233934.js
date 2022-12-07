@@ -75,7 +75,7 @@ var _typeof2 = "function" == typeof Symbol && "symbol" == _typeof(Symbol.iterato
                                     });
                                 })));
                             }
-                            else {
+                            else{
                                 e.querySelector("include-fragment") ? setTimeout(l, 500) : (!0 === f.responsive && (a = (n = e.querySelector("svg.js-calendar-graph-svg")).getAttribute("width"), u = n.getAttribute("height"), n.removeAttribute("height"), n.setAttribute("width", "100%"), n.setAttribute("viewBox", "0 0 " + a + " " + u)), !1 !== f.global_stats && (a = (n = p(g("svg", e).outerHTML)).current_streak ? m(n.current_streak_range[0], y) + " &ndash; " + m(n.current_streak_range[1], y) : n.last_contributed ? "Last contributed in " + m(n.last_contributed, y) + "." : "Rock - Hard Place", u = n.longest_streak ? m(n.longest_streak_range[0], y) + " &ndash; " + m(n.longest_streak_range[1], y) : n.last_contributed ? "Last contributed in " + m(n.last_contributed, y) + "." : "Rock - Hard Place", t = g("<div>", { class: "contrib-column contrib-column-first table-column", html: '<span class="text-muted">Contributions in the last year</span>\n                               <span class="contrib-number">' + n.last_year + ' total</span>\n                               <span class="text-muted">' + m(b.add(b.subtract(new Date(), 1, "year"), 1, "day"), h) + " &ndash; " + m(new Date(), h) + "</span>" }), u = g("<div>", { class: "contrib-column table-column", html: '<span class="text-muted">Longest streak</span>\n                               <span class="contrib-number">' + M(n.longest_streak) + '</span>\n                               <span class="text-muted">' + u + "</span>" }), n = g("<div>", { class: "contrib-column table-column", html: '<span class="text-muted">Current streak</span>\n                               <span class="contrib-number">' + M(n.current_streak) + '</span>\n                               <span class="text-muted">' + a + "</span>" }), e.appendChild(t), e.appendChild(u), e.appendChild(n)), d.innerHTML = e.innerHTML, !0 === f.tooltips && (a = d, (r = document.createElement("div")).classList.add("day-tooltip"), a.appendChild(r), a.querySelectorAll(".js-calendar-graph-svg rect.ContributionCalendar-day").forEach(function (e) {
                                     e.addEventListener("mouseenter", function (e) {
                                         var t = e.target.getAttribute("data-count"),
@@ -263,3 +263,4 @@ var _typeof2 = "function" == typeof Symbol && "symbol" == _typeof(Symbol.iterato
         }, {}]
     }, {}, [1])(1);
 });
+

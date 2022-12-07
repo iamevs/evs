@@ -285,13 +285,9 @@ import Sphereskill from "./sphereskill.astro";
             <Sphereskill />
         </div>
     </div>
-    <center>
-        <div>
-            <!-- <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=iamevs&theme=github_dark" alt="test"/> -->
-            <!-- <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=iamevs&theme=github_dark" alt="github profile img"/> -->
-            <!-- <img src="https://github-readme-stats.vercel.app/api/pin/?username=iamevs&repo=iamevs" alt=""/> -->
-        </div>
-    </center>
+    <div>
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=iamevs&theme=github_dark" alt="test"/>
+    </div>
 </div>
 
 <style>
@@ -484,16 +480,14 @@ import Sphereskill from "./sphereskill.astro";
         margin-top: 10px;
         transform: translateZ(20px);
     }
-    .js-lib,
-    .d-v-content {
+    .js-lib, .d-v-content {
         backdrop-filter: blur(10px);
         background-color: #212529;
         position: relative;
         top: -100%;
     }
     .skill-dropdown-content > card,
-    .js-lib > card,
-    .d-v-content > card {
+    .js-lib > card, .d-v-content > card {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -518,8 +512,9 @@ import Sphereskill from "./sphereskill.astro";
         transform: rotate(0deg);
     }
 
-    .d-v {
+    .d-v{
         color: #fff;
         transform: rotate(-90deg);
     }
+
 </style>

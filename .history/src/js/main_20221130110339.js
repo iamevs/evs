@@ -1,5 +1,5 @@
 import { menu } from "./menu.js";
-// import { GitHubCalendar } from "./github.js";
+import { GitHubCalendar } from "./github.js";
 
 menu();
 
