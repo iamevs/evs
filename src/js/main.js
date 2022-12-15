@@ -138,8 +138,18 @@ innerdown(dvdown, dvcontent);
 
 // github calendar
 
-const container = document.getElementById("calender");
+// const container = document.getElementById("calender");
 
 // GitHubCalendar(container, "iamevs");
 
-new GitHubCalendar(container, "iamevs", { responsive: true });
+// new GitHubCalendar(container, "iamevs", { responsive: true });
+
+var iframe = document.getElementById('calender');
+var style = document.createElement('style');
+style.textContent =
+  '* {' +
+  '  background-color: #212529 !important;' +
+  '}' 
+;
+console.log(style);
+iframe.contentDocument.head.appendChild(style);
