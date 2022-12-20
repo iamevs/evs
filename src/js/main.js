@@ -9,7 +9,7 @@ const text = document.querySelector(".text");
 // replace span to .text except the id static
 text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
 const eavbsi = document.querySelector("#static");
-console.log(eavbsi);
+// console.log(eavbsi);
 
 
 const element = document.querySelectorAll("span");
@@ -144,12 +144,65 @@ innerdown(dvdown, dvcontent);
 
 // new GitHubCalendar(container, "iamevs", { responsive: true });
 
-var iframe = document.getElementById('calender');
-var style = document.createElement('style');
-style.textContent =
-  '* {' +
-  '  background-color: #212529 !important;' +
-  '}' 
-;
-console.log(style);
-iframe.contentDocument.head.appendChild(style);
+// var iframe = document.getElementById('calender');
+// var style = document.createElement('style');
+// style.textContent =
+//   '* {' +
+//   '  background-color: #212529 !important;' +
+//   '}' 
+// ;
+// console.log(style);
+// iframe.contentDocument.head.appendChild(style);
+
+
+// var obj = {
+//   fname: "",
+//   lname: "",
+//   email: "",
+//   contact: "",
+//   textarea: "",
+// };
+// var fname = document.getElementById("fname");
+// var lname = document.getElementById("lname");
+// var email = document.getElementById("email");
+// var contact = document.getElementById("contact");
+// var textarea = document.getElementById("textarea");
+// var submit = document.getElementById("submit");
+
+// function appendData(obj) {
+//   var fs = require("fs");
+//   fs.readFile("data.json", function (err, data) {
+//     if (err) throw err;
+//     var json = JSON.parse(data);
+//     json.push(obj);
+//     fs.writeFile("data.json", JSON.stringify(json), function (err) {
+//       if (err) throw err;
+//       console.log("Data is appended to file successfully.");
+//     });
+//   });
+// }
+
+
+
+// submit.addEventListener("click", function () {
+//   // prevent reload
+//   event.preventDefault();
+//   obj.fname = fname.value;
+//   obj.lname = lname.value;
+//   obj.email = email.value;
+//   obj.contact = contact.value;
+//   obj.textarea = textarea.value;
+//   // console.log(obj);
+//   var str = JSON.stringify(obj);
+//   console.log(str);
+
+//   fs.writeFile("data.json", str, function (err) {
+//     if (err) throw err;
+//     console.log("Data is appended to file successfully.");
+//   });
+
+//   // appendData(obj);
+// });
+
+
+

@@ -16,7 +16,7 @@
                     allowfullscreen=""
                     loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3935.8702083120497!2d76.98733266193054!3d11.077775875511788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8f81b7514a15f%3A0x155e29f8d14154fc!2sKumaraguru%20College%20of%20Technology!5e1!3m2!1sen!2sin!4v1671447916214!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3935.8702083120497!2d76.98733266193054!3d11.077775875511788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8f81b7514a15f%3A0x155e29f8d14154fc!2sKumaraguru%20College%20of%20Technology!5e1!3m2!1sen!2sin!4v1671447916214!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
             </div>
             <div class="col2 column2 last">
                 <div class="sec2innercont">
@@ -43,11 +43,13 @@
                             <input
                                 class="col2 first"
                                 type="text"
+                                id="fname"
                                 placeholder="FirstName"
                             />
                             <input
                                 class="col2 last"
                                 type="text"
+                                id="lname"
                                 placeholder="LastName"
                             />
                         </div>
@@ -55,25 +57,50 @@
                             <input
                                 class="col2 first"
                                 type="text"
+                                id="email"
                                 placeholder="Email"
                             />
                             <input
                                 class="col2 last"
                                 type="text"
+                                id="contact"
                                 placeholder="Contact Number"
                             />
                         </div>
                         <div class="clearfix">
                             <textarea
                                 name="textarea"
-                                id=""
+                                id="textarea"
                                 cols="30"
                                 rows="7"
                                 placeholder="Your message here...."></textarea>
                         </div>
-                        <div class="clearfix">
-                            <input type="submit" value="Send" />
-                        </div>
+                        <button id="submit">SEND</button>
+                        <script>
+                            // var obj = {
+                            //     fname: "",
+                            //     lname: "",
+                            //     email: "",
+                            //     contact: "",
+                            //     textarea: "",
+                            // };
+                            // var fname = document.getElementById("fname");
+                            // var lname = document.getElementById("lname");
+                            // var email = document.getElementById("email");
+                            // var contact = document.getElementById("contact");
+                            // var textarea = document.getElementById("textarea");
+                            // var submit = document.getElementById("submit");
+                            // submit.addEventListener("click", function () {
+                            //     // prevent reload
+                            //     event.preventDefault();
+                            //     obj.fname = fname.value;
+                            //     obj.lname = lname.value;
+                            //     obj.email = email.value;
+                            //     obj.contact = contact.value;
+                            //     obj.textarea = textarea.value;
+                            //     console.log(obj);
+                            // });
+                        </script>
                     </form>
                 </div>
             </div>
@@ -82,7 +109,9 @@
 </div>
 
 <style>
-    input{
+    input,
+    button,
+    textarea {
         border: 1px solid #ccc;
         border-radius: 5px;
         padding: 10px;
@@ -90,13 +119,12 @@
         width: 100%;
         box-shadow: 0px 0px 20px 1px #0078ff1f;
     }
-    textarea{
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        padding: 10px;
-        margin: 5px 0;
-        width: 100%;
-        box-shadow: 0px 0px 20px 1px #0078ff1f;
+    button {
+        border: none;
+        background: #3a86ff;
+        color: #fff;
+        /* font-weight: 600; */
+        font-size: 20px;
     }
     *:after,
     *:before {
@@ -136,6 +164,7 @@
     /* Contact Form Styling */
     .contact-container {
         padding: 0 50px 70px;
+        background: #22272e !important;
     }
     .textcenter {
         text-align: center;
