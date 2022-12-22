@@ -50,7 +50,7 @@ let filename = [
 
 var tagCloud = TagCloud('.Sphere', filename, {
 
-  radius: (window.innerWidth > 768) ? 250 : 190,
+  radius: (window.innerWidth > 768) ? 250 : 250,
   maxSpeed: 'fast',
   initSpeed: 'fast',
   direction: 135,
@@ -136,20 +136,24 @@ const dvdown = document.querySelector('.d-v');
 const dvcontent = document.querySelector(".d-v-content");
 innerdown(dvdown, dvcontent);
 
-// github calendar
+// // github calendar
 
-// const container = document.getElementById("calender");
+const container = document.getElementById("calender");
 
 // GitHubCalendar(container, "iamevs");
 
 // new GitHubCalendar(container, "iamevs", { responsive: true });
+
+GitHubCalendar(container, "iamevs");
+// or enable responsive functionality
+GitHubCalendar(container, "iamevs", { responsive: true });
 
 // var iframe = document.getElementById('calender');
 // var style = document.createElement('style');
 // style.textContent =
 //   '* {' +
 //   '  background-color: #212529 !important;' +
-//   '}' 
+//   '}'
 // ;
 // console.log(style);
 // iframe.contentDocument.head.appendChild(style);

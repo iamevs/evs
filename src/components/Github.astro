@@ -16,7 +16,7 @@ import Coffee from "./../assets/coffee.png";
 </div> -->
 
   <div class="Github-calender">
-    <!-- <div id="calender" class="calendar"></div> -->
+    <div id="calender" class="calendar"></div>
     <!-- <iframe src="Calender.html" frameborder="0" width="100%" height="400px"
       ></iframe> -->
     <!-- <Calender /> -->
@@ -31,17 +31,24 @@ import Coffee from "./../assets/coffee.png";
       frameborder="0"
       width="100%"
       height="400px"
-      class="calender cal-b"
-      ></iframe>
-    </div>
-    <!-- <img src="https://api.githubtrends.io/user/svg/iamevs/repos?time_range=one_year&theme=dark" alt=""> -->
+      class="calender cal-b"></iframe>
+  </div>
+  <!-- <img src="https://api.githubtrends.io/user/svg/iamevs/repos?time_range=one_year&theme=dark" alt=""> -->
 </div>
 
 <style>
-
   .head-container {
     padding-top: 10px;
     background-color: #22272e !important;
+  }
+
+  #calender{
+    padding: 20px;
+  }
+  @media (max-width: 768px) {
+    #calender {
+      padding: 0px !important;
+    }
   }
   .calendar-container {
     display: flex;
@@ -79,5 +86,8 @@ import Coffee from "./../assets/coffee.png";
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #22272e !important;
   }
 </style>

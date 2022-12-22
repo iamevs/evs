@@ -837,6 +837,7 @@ h2.f4.text-normal.mb-3 {
   display: none;
 }
 
+
 .day-tooltip {
   white-space: nowrap;
   position: absolute;
@@ -871,6 +872,7 @@ h2.f4.text-normal.mb-3 {
   border: 5px solid transparent;
   border-top-color: rgba(0, 0, 0, .85)
 }
+
 
 text.ContributionCalendar-label {
   fill: #ccc;
