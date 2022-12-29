@@ -1,5 +1,10 @@
 ---
     import Img1 from "../assets/evs.webp";
+    import PortfolioProject from "../assets/portfolio-project.jpg";
+    import win11 from "../assets/win-11.jpg";
+    import calc from "../assets/calc.jpg";
+    import chatapp from "../assets/chat-app.jpg";
+    import tsh from "../assets/tsh.jpg";
 ---
 
 <div class="project-container">
@@ -10,7 +15,7 @@
         <div class="project-card">
             <div class="project-card__image">
                 <img
-                    src={Img1}
+                    src={PortfolioProject}
                     alt="project image"
                 />
             </div>
@@ -25,14 +30,14 @@
         <div class="project-card">
             <div class="project-card__image">
                 <img
-                    src={Img1}
+                    src={win11}
                     alt="project image"
                 />
             </div>
             <div class="project-card__content">
-                <h3 class="project-card__title" id="mini-head">Portfolio Site </h3>
+                <h3 class="project-card__title" id="mini-head"> Windows 11 - Clone </h3>
                 <p class="project-card__description">
-                    A webpage for my portfolio build using ReactJs, Astro, Svelte.  
+                    A complete clone of windows 11 build using Lit Framework. <i>Currently on progress, if intrested anyone can add their stuffs </i> 
                 </p>
                 <a href="https://www.github.com/iamevs/Vijayasenthil-E" class="project-card__link">View Project</a>
             </div>
@@ -40,20 +45,50 @@
         <div class="project-card">
             <div class="project-card__image">
                 <img
-                    src={Img1}
+                    src={tsh}
                     alt="project image"
                 />
             </div>
             <div class="project-card__content">
-                <h3 class="project-card__title" id="mini-head">Portfolio Site </h3>
+                <h3 class="project-card__title" id="mini-head">PBL project Docs</h3>
                 <p class="project-card__description">
-                    A webpage for my portfolio build using ReactJs, Astro, Svelte.  
+                    A documentation for my PBL project Tech-Savvy-Home .
                 </p>
-                <a href="https://www.github.com/iamevs/Vijayasenthil-E" class="project-card__link">View Project</a>
+                <a href="https://github.com/iamevs/Tech-Savvy-Home" class="project-card__link">View Project</a>
             </div>
         </div>
-        
+        <div class="project-card">
+            <div class="project-card__image">
+                <img
+                    src={calc}
+                    alt="project image"
+                />
+            </div>
+            <div class="project-card__content">
+                <h3 class="project-card__title" id="mini-head"> Calculator - Application </h3>
+                <p class="project-card__description">
+                    A simple calculator application built using electronJs.
+                </p>
+                <a href="https://github.com/iamevs/calculator-electron-js" class="project-card__link">View Project</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="project-card__image">
+                <img
+                    src={chatapp}
+                    alt="project image"
+                />
+            </div>
+            <div class="project-card__content">
+                <h3 class="project-card__title" id="mini-head"> Chat app</h3>
+                <p class="project-card__description">
+                    A simple chat application built using ReactJs, NodeJs, ExpressJs, Socket.io.
+                </p>
+                <a href="https://github.com/iamevs/Chat-app-React" class="project-card__link">View Project</a>
+            </div>
+        </div>
     </div>
+    <a href="https://www.github.com/iamevs"  class="more"id="mini-head" style="margin-top: 40px; text-decoration: none;">More projects on my Github</a>
 </div>
 
 <style>
@@ -70,6 +105,10 @@
         font-weight: 600;
         margin-bottom: 20px;
         text-shadow: -10px 10px 15px rgba(0, 0, 0, 0.8);
+    }
+
+    .more:hover{
+        transform: scale(1.1);
     }
     .project-container {
         display: flex;
@@ -99,7 +138,7 @@
         justify-content: center;
         align-items: center;
         width: 400px;
-        height: 400px;
+        height: auto;
         margin: 1rem;
         /* background-color: #fff; */
         background-color: transparent;
@@ -117,7 +156,7 @@
 
     .project-card__image {
         margin-top: 20px;
-        width: 200px;
+        width: auto;
         height: 200px;
         overflow: hidden;
         align-items: center;
@@ -128,7 +167,12 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        border-radius: 50%;
+        border-radius: 5px;
+    }
+
+    .project-card__image img:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s ease-in-out;
     }
 
     .project-card__content {
