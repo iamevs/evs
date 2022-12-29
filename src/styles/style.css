@@ -46,8 +46,7 @@ ol {
 }
 
 a {
-  text-decoration: none;
-  /* cursor:default; */
+  text-decoration: none !important;
 }
 
 img {
