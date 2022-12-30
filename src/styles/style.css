@@ -612,13 +612,12 @@ nav ul li a {
 
 nav ul li a:hover {
   -webkit-transform: scaleX(1);
-  transform: scaleX(1);
+  transform: scaleX(1.1);
   -webkit-transform-origin: bottom left;
   transform-origin: bottom left;
-  /* color: #1f1f1f; */
-  animation: zoom 0.5s ease forwards;
+  animation: transform 0.5s ease forwards;
+  color: #fff;
 }
-
 
 
 .intro {
